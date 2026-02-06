@@ -29,7 +29,7 @@
 | ID | Task | Effort | Status | Owner |
 |----|------|--------|--------|-------|
 | T001 | Create GitHub Actions workflow file | 2h | ✅ | Nyx 🌙 |
-| T002 | Configure Node.js version matrix | 30m | ⏳ | Nyx 🌙 |
+| T002 | Configure Node.js version matrix | 30m | ✅ | Nyx 🌙 |
 | T003 | Add branch protection rules | 30m | ⬜ | — |
 
 ---
