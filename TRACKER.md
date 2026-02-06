@@ -1,8 +1,8 @@
-# 📊 Work Tracker Dashboard
+# 📊 Work Tracker
 
-_Quick overview of all active work_
+_Dashboard view of all active work_
 
-**Last updated:** 2026-02-06 18:00 UTC
+**Updated:** 2026-02-06 18:15 UTC
 
 ---
 
@@ -10,95 +10,90 @@ _Quick overview of all active work_
 
 | Issue | Location | Owner |
 |-------|----------|-------|
-| Groq API key exposed | LangAi repo | UNCLAIMED |
-| Langfuse creds exposed | LangAi repo | UNCLAIMED |
+| Groq API key exposed | `LangAi/update_env.py:19` | ⬜ |
+| Langfuse creds exposed | `LangAi/update_env.py:33` | ⬜ |
 
 ---
 
 ## Pillar Health
 
-| Pillar | Status | Active Project | Progress |
-|--------|--------|----------------|----------|
-| 🏥 Healthcare SaaS | 🟢 Active | Vete | EPIC-V003 |
-| 🔬 Research | 🟡 Maintenance | p-adic Bio | EPIC-R001 |
-| 📚 Education | ⚪ Paused | — | — |
-| 🛠️ Tools & Infra | 🟢 Active | Org standards | — |
+| Pillar | Status | Active Project | Current Epic |
+|--------|--------|----------------|--------------|
+| [Healthcare SaaS](pillars/healthcare-saas/) | 🟢 | Vete | v003-security-devops |
+| [Research](pillars/research/) | 🟡 | p-adic Bio | — (needs setup) |
+| [Education](pillars/education/) | ⚪ | — | Paused |
+| [Tools & Infra](pillars/tools-infra/) | 🟢 | Org standards | — |
 
 ---
 
 ## Agent Status
 
-| Agent | Status | Current Work |
-|-------|--------|--------------|
-| Nyx 🌙 | ✅ Active | Vete EPIC-V003 |
-| Erebus 🔥 | ✅ Active | Research EPIC-R001 |
-| Atlas 🗼 | ⏳ Pending | Setup needed |
+| Agent | Status | Working On |
+|-------|--------|------------|
+| Nyx 🌙 | ✅ Active | Vete v003 |
+| Erebus 🔥 | ✅ Active | Research setup |
+| Atlas 🗼 | ⏳ Pending | Needs install |
 
 ---
 
-## Task Queue (Ready to Claim)
+## 📋 Ready to Claim
 
-### High Priority
+### Vete — v003-security-devops
 
-| ID | Task | Project | Effort | Claim |
-|----|------|---------|--------|-------|
-| — | Fix LangAi credentials | Tools | 1h | Any |
-| VETE-T-001 | GH Actions CI | Vete | 2h | ⬜ |
-| 3AM-T-001 | Add LICENSE to 3-adic-ml | Research | 15m | ⬜ |
+| Story | Task | Effort | File |
+|-------|------|--------|------|
+| s001 | T001: Create GH Actions workflow | 2h | [→](pillars/healthcare-saas/projects/vete/epics/v003-security-devops/s001-cicd-pipeline.md) |
+| s001 | T002: Configure Node matrix | 30m | [→](pillars/healthcare-saas/projects/vete/epics/v003-security-devops/s001-cicd-pipeline.md) |
+| s001 | T003: Branch protection rules | 30m | [→](pillars/healthcare-saas/projects/vete/epics/v003-security-devops/s001-cicd-pipeline.md) |
+| s002 | T001: Research rate limiting | 1h | [→](pillars/healthcare-saas/projects/vete/epics/v003-security-devops/s002-rate-limiting.md) |
+| s002 | T002: Implement rate limiter | 3h | [→](pillars/healthcare-saas/projects/vete/epics/v003-security-devops/s002-rate-limiting.md) |
+| s003 | T001: Audit API routes | 2h | [→](pillars/healthcare-saas/projects/vete/epics/v003-security-devops/s003-input-sanitization.md) |
+| s003 | T002: Add Zod schemas | 4h | [→](pillars/healthcare-saas/projects/vete/epics/v003-security-devops/s003-input-sanitization.md) |
+| s004 | T001: Review Supabase auth | 1h | [→](pillars/healthcare-saas/projects/vete/epics/v003-security-devops/s004-auth-hardening.md) |
+| s004 | T002: Failed login monitoring | 2h | [→](pillars/healthcare-saas/projects/vete/epics/v003-security-devops/s004-auth-hardening.md) |
 
-### Medium Priority
-
-| ID | Task | Project | Effort | Claim |
-|----|------|---------|--------|-------|
-| VETE-T-004 | Research rate limiting | Vete | 1h | ⬜ |
-| 3AM-T-002 | Create pyproject.toml | Research | 1h | ⬜ |
-
-→ Full task lists:
-- [Vete tasks](pillars/healthcare-saas/projects/vete/TASKS.md)
-- [Research tasks](pillars/research/projects/padic-bioinformatics/PROJECT.md)
+**Total:** 9 tasks, ~16h of work
 
 ---
 
-## Today's Activity
+## 📈 Progress
 
-| Time | Action | Agent |
-|------|--------|-------|
-| 18:00 | Repo reorganization complete | Nyx 🌙 |
-| 17:35 | Created all epics | Nyx 🌙 |
-| 16:55 | Swarm architecture | Nyx 🌙 |
-| 16:34 | Erebus agent setup | Nyx 🌙 |
+### Vete
 
----
-
-## Quick Links
-
-| Document | Purpose |
-|----------|---------|
-| [pillars/](pillars/) | All work organized by pillar |
-| [HIERARCHY.md](HIERARCHY.md) | Level definitions |
-| [agents/](agents/) | Agent registry |
-| [CLAIMING-PROTOCOL.md](CLAIMING-PROTOCOL.md) | How to claim tasks |
+| Epic | Status | Progress |
+|------|--------|----------|
+| v001-foundation | ✅ | 100% |
+| v002-test-coverage | ✅ | 100% |
+| v003-security-devops | ⏳ | 0% (0/9 tasks) |
+| v004-code-quality | 📋 | Not started |
+| v005-production-polish | ⬜ | Backlog |
+| v006-feature-mvp | ⬜ | Backlog |
 
 ---
 
-## Navigation
+## 🗂️ Navigation
 
 ```
-TRACKER.md (you are here)
+Start here
     │
-    ├── pillars/
-    │   ├── healthcare-saas/
-    │   │   └── projects/vete/
-    │   │       ├── EPICS.md
-    │   │       ├── STORIES.md
-    │   │       └── TASKS.md      ← claim tasks here
-    │   │
-    │   └── research/
-    │       └── projects/padic-bioinformatics/
-    │           └── PROJECT.md    ← research tasks
+    ├── pillars/healthcare-saas/projects/vete/
+    │   ├── _project.md          # Project overview
+    │   └── epics/v003-.../      # Active epic
+    │       ├── _epic.md         # Epic overview  
+    │       └── s001-*.md        # Stories with tasks ← CLAIM HERE
     │
     └── agents/
-        ├── nyx/FOCUS.md
-        ├── erebus/FOCUS.md
-        └── atlas/FOCUS.md
+        └── {agent}/FOCUS.md     # What each agent is doing
 ```
+
+---
+
+## Claiming a Task
+
+1. Find task in story file (e.g., `s001-cicd-pipeline.md`)
+2. Edit: `⬜ | —` → `⏳ | Nyx`
+3. Commit: `claim: VETE-v003-s001-T001 by Nyx`
+4. Push (if fails, someone else claimed it)
+5. Do the work on the actual repo
+6. Edit: `⏳` → `✅`, add completion time
+7. Commit: `done: VETE-v003-s001-T001`

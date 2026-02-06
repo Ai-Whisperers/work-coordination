@@ -146,36 +146,57 @@ PILLAR: Research & Publications
 
 ---
 
-## File Structure (Proposed)
+## File Structure
 
 ```
 work-coordination/
-├── HIERARCHY.md                 # This file
+├── HIERARCHY.md                 # This file (definitions)
 ├── TRACKER.md                   # Quick dashboard
+├── CLAIMING-PROTOCOL.md         # How to claim tasks
 │
 ├── pillars/
 │   ├── _index.md               # All pillars overview
+│   │
 │   ├── healthcare-saas/
 │   │   ├── PILLAR.md           # Pillar definition
 │   │   └── projects/
-│   │       ├── vete/
-│   │       │   ├── PROJECT.md  # Project overview
-│   │       │   ├── EPICS.md    # All epics for this project
-│   │       │   ├── STORIES.md  # All stories
-│   │       │   └── TASKS.md    # All tasks (claimable)
-│   │       └── healthcare-templates/
-│   │           └── ...
+│   │       └── vete/
+│   │           ├── _project.md     # Project overview
+│   │           ├── _backlog.md     # Unprioritized ideas
+│   │           │
+│   │           └── epics/
+│   │               ├── v001-foundation/
+│   │               │   └── _epic.md        # ✅ Complete
+│   │               │
+│   │               ├── v002-test-coverage/
+│   │               │   └── _epic.md        # ✅ Complete
+│   │               │
+│   │               └── v003-security-devops/   # ⏳ Active
+│   │                   ├── _epic.md            # Epic definition
+│   │                   ├── s001-cicd-pipeline.md    # Story + tasks
+│   │                   ├── s002-rate-limiting.md
+│   │                   ├── s003-input-sanitization.md
+│   │                   └── s004-auth-hardening.md
 │   │
 │   ├── research/
-│   │   ├── PILLAR.md
-│   │   └── projects/
-│   │       └── padic-bioinformatics/
-│   │           └── ...
+│   │   └── ...
 │   │
-│   └── education/
+│   └── tools-infra/
 │       └── ...
 │
-├── agents/                      # Agent registry (unchanged)
-├── templates/                   # Templates (unchanged)
+├── agents/                      # Agent registry
+├── templates/                   # Setup templates
 └── archive/                     # Completed/deprecated
 ```
+
+## Naming Conventions
+
+| Item | Pattern | Example |
+|------|---------|---------|
+| Project overview | `_project.md` | `vete/_project.md` |
+| Backlog | `_backlog.md` | `vete/_backlog.md` |
+| Epic folder | `{id}-{slug}/` | `v003-security-devops/` |
+| Epic definition | `_epic.md` | `v003-security-devops/_epic.md` |
+| Story file | `s{NNN}-{slug}.md` | `s001-cicd-pipeline.md` |
+
+**Underscore prefix (`_`)** = metadata/index file, not a deliverable
