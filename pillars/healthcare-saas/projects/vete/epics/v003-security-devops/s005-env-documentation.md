@@ -29,7 +29,7 @@
 |----|------|--------|--------|-------|
 | T001 | Create .env.example from current .env | 30m | ✅ | Nyx 🌙 |
 | T002 | Add comments explaining each variable | 30m | ✅ | Nyx 🌙 |
-| T003 | Update README with env setup section | 30m | ⬜ | — |
+| T003 | Update README with env setup section | 30m | ⏳ | Nyx 🌙 |
 
 ---
 
