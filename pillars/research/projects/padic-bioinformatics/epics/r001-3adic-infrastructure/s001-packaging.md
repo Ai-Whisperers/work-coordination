@@ -16,7 +16,7 @@
 
 ## Acceptance Criteria
 
-- [ ] MIT LICENSE file added
+- [x] MIT LICENSE file added
 - [ ] pyproject.toml created with metadata
 - [ ] Package installable via `pip install -e .`
 - [ ] README updated with install instructions
@@ -27,7 +27,7 @@
 
 | ID | Task | Effort | Status | Owner |
 |----|------|--------|--------|-------|
-| T001 | Add MIT LICENSE file | 15m | ⏳ | Erebus 🔥 |
+| T001 | Add MIT LICENSE file | 15m | ✅ | Erebus 🔥 |
 | T002 | Create pyproject.toml | 1h | ⬜ | — |
 | T003 | Update README with install instructions | 30m | ⬜ | — |
 

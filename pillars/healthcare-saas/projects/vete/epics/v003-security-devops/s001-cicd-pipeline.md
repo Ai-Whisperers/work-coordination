@@ -16,7 +16,7 @@
 
 ## Acceptance Criteria
 
-- [ ] GitHub Actions workflow triggers on push and PR
+- [x] GitHub Actions workflow triggers on push and PR
 - [ ] Unit tests run in CI
 - [ ] API tests run in CI
 - [ ] PR cannot be merged if tests fail
@@ -28,7 +28,7 @@
 
 | ID | Task | Effort | Status | Owner |
 |----|------|--------|--------|-------|
-| T001 | Create GitHub Actions workflow file | 2h | ⏳ | Nyx 🌙 |
+| T001 | Create GitHub Actions workflow file | 2h | ✅ | Nyx 🌙 |
 | T002 | Configure Node.js version matrix | 30m | ⬜ | — |
 | T003 | Add branch protection rules | 30m | ⬜ | — |
 
