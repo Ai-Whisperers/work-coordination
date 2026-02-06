@@ -1,25 +1,14 @@
 # EPIC-V004: Code Quality
 
 **Status:** 📋 Ready  
-**Owner:** —  
-**Depends on:** v003 (CI must exist first)
+**Owner:** Nyx 🌙  
+**Target:** 2026-02-15
 
 ---
 
 ## Goal
 
-Clean up technical debt and improve code quality.
-
----
-
-## Stories (Draft)
-
-| ID | Story | Tasks |
-|----|-------|-------|
-| s001 | Eliminate `any` types (99→<30) | TBD |
-| s002 | Clear lint warnings (96→0) | TBD |
-| s003 | Reduce context provider nesting | TBD |
-| s004 | Complete domain pattern migration | TBD |
+Clean up technical debt, improve type safety, and reduce warnings.
 
 ---
 
@@ -27,14 +16,35 @@ Clean up technical debt and improve code quality.
 
 | Metric | Current | Target |
 |--------|---------|--------|
-| `any` types | 99 | <30 |
-| Lint warnings | 96 | 0 |
-| Context providers | ~15 | <8 |
+| `any` types | ~99 | <30 |
+| Lint warnings | ~96 | 0 |
+| Console.log | ~20 | 0 |
+| Type suppressions | ~17 | <5 |
 
 ---
 
-## Notes
+## Stories
 
-- Wait for v003 (need CI to verify changes don't break things)
-- Can be parallelized across multiple agents
-- Good for Sonnet sub-agents (mechanical refactoring)
+| ID | Story | Status | Tasks |
+|----|-------|--------|-------|
+| [s001](s001-eliminate-any-types.md) | Eliminate `any` types | 📋 Ready | 5 |
+| [s002](s002-fix-lint-warnings.md) | Fix lint warnings | 📋 Ready | 4 |
+| [s003](s003-console-cleanup.md) | Console statement cleanup | 📋 Ready | 3 |
+| [s004](s004-type-safety.md) | Type safety improvements | 📋 Ready | 4 |
+
+---
+
+## Acceptance Criteria
+
+- [ ] `any` count < 30
+- [ ] Zero lint warnings
+- [ ] No console.log in production code
+- [ ] Type suppressions < 5
+
+---
+
+## Progress
+
+```
+[                    ] 0% (0/16 tasks)
+```

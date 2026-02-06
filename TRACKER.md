@@ -1,79 +1,110 @@
-# 📊 Work Tracker
+# 📊 Vete Work Tracker
 
-_Dashboard view of all active work_
+_All hands on Vete_
 
-**Updated:** 2026-02-06 18:20 UTC
-
----
-
-## 🚨 Urgent
-
-| Issue | Location | Owner |
-|-------|----------|-------|
-| Groq API key exposed | `LangAi/update_env.py:19` | ⬜ |
-| Langfuse creds exposed | `LangAi/update_env.py:33` | ⬜ |
+**Updated:** 2026-02-06 18:25 UTC
 
 ---
 
-## Active Work
+## Current Progress
 
-### Nyx 🌙 — Vete v003-security-devops
-
-| Story | Task | Effort | Status |
-|-------|------|--------|--------|
-| s001 | T001: Create GH Actions workflow | 2h | ⬜ |
-| s001 | T002: Configure Node matrix | 30m | ⬜ |
-| s001 | T003: Branch protection rules | 30m | ⬜ |
-| s002 | T001: Research rate limiting | 1h | ⬜ |
-| s002 | T002: Implement rate limiter | 3h | ⬜ |
-| s003 | T001: Audit API routes | 2h | ⬜ |
-| s003 | T002: Add Zod schemas | 4h | ⬜ |
-| s004 | T001: Review Supabase auth | 1h | ⬜ |
-| s004 | T002: Failed login monitoring | 2h | ⬜ |
-
-**Path:** `pillars/healthcare-saas/projects/vete/epics/v003-security-devops/`
+| Epic | Status | Done | Total |
+|------|--------|------|-------|
+| v003-security-devops | ⏳ Active | 1 | 12 |
+| v004-code-quality | 📋 Ready | 0 | 16 |
+| **Total** | | **1** | **28** |
 
 ---
 
-### Erebus 🔥 — Research r001-3adic-infrastructure
+## ⏳ In Progress
 
-| Story | Task | Effort | Status |
-|-------|------|--------|--------|
-| s001 | T001: Add MIT LICENSE | 15m | ⬜ |
-| s001 | T002: Create pyproject.toml | 1h | ⬜ |
-| s001 | T003: Update README | 30m | ⬜ |
-| s002 | T001: Create GH Actions CI | 2h | ⬜ |
-| s002 | T002: Run tests, fix failures | 30m | ⬜ |
-
-**Path:** `pillars/research/projects/padic-bioinformatics/epics/r001-3adic-infrastructure/`
+| Task | Story | Owner |
+|------|-------|-------|
+| T002: Node.js matrix | s001-cicd | Nyx 🌙 |
 
 ---
 
-## Agent Status
+## 📋 Ready to Claim (v003)
 
-| Agent | Status | Epic | Tasks |
-|-------|--------|------|-------|
-| Nyx 🌙 | 🟢 Working | v003-security-devops | 9 ready |
-| Erebus 🔥 | 🟢 Working | r001-3adic-infrastructure | 5 ready |
-| Atlas 🗼 | ⏳ Pending | — | Setup needed |
+### s001-cicd-pipeline (1/3 done)
+| Task | Effort | Status |
+|------|--------|--------|
+| T003: Branch protection | 30m | ⬜ |
+
+### s002-rate-limiting (0/2 done)
+| Task | Effort | Status |
+|------|--------|--------|
+| T001: Research options | 1h | ⬜ |
+| T002: Implement limiter | 3h | ⬜ |
+
+### s003-input-sanitization (0/2 done)
+| Task | Effort | Status |
+|------|--------|--------|
+| T001: Audit API routes | 2h | ⬜ |
+| T002: Add Zod schemas | 4h | ⬜ |
+
+### s004-auth-hardening (0/2 done)
+| Task | Effort | Status |
+|------|--------|--------|
+| T001: Review Supabase auth | 1h | ⬜ |
+| T002: Failed login monitoring | 2h | ⬜ |
+
+### s005-env-documentation (0/3 done)
+| Task | Effort | Status |
+|------|--------|--------|
+| T001: Create .env.example | 30m | ⬜ |
+| T002: Add comments | 30m | ⬜ |
+| T003: Update README | 30m | ⬜ |
 
 ---
 
-## Progress Today
+## 📋 Ready to Claim (v004)
 
-| Time | Action | Agent |
-|------|--------|-------|
-| 18:20 | Research stories created | Nyx 🌙 |
-| 18:00 | Repo restructure complete | Nyx 🌙 |
-| 17:50 | Epic folder structure | Nyx 🌙 |
-| 17:36 | Hierarchy defined | Nyx 🌙 |
+### s001-eliminate-any-types (0/5 done)
+| Task | Effort | Status |
+|------|--------|--------|
+| T001: Fix any in lib/domains/ | 1h | ⬜ |
+| T002: Fix any in lib/actions/ | 1h | ⬜ |
+| T003: Fix any in app/api/ | 1h | ⬜ |
+| T004: Fix any in components/ | 1h | ⬜ |
+| T005: Create shared types | 1h | ⬜ |
+
+### s002-fix-lint-warnings (0/4 done)
+| Task | Effort | Status |
+|------|--------|--------|
+| T001: Fix lint in lib/ | 1h | ⬜ |
+| T002: Fix lint in app/ | 1h | ⬜ |
+| T003: Fix lint in components/ | 1h | ⬜ |
+| T004: Remove eslint-disable | 30m | ⬜ |
+
+### s003-console-cleanup (0/3 done)
+| Task | Effort | Status |
+|------|--------|--------|
+| T001: Remove console.log | 1h | ⬜ |
+| T002: Replace with logger | 30m | ⬜ |
+| T003: Review console.error | 30m | ⬜ |
+
+### s004-type-safety (0/4 done)
+| Task | Effort | Status |
+|------|--------|--------|
+| T001: Regenerate Supabase types | 30m | ⬜ |
+| T002: Fix null handling | 1h | ⬜ |
+| T003: Add Zod schemas | 1.5h | ⬜ |
+| T004: Remove unsafe casts | 1h | ⬜ |
+
+---
+
+## ✅ Completed Today
+
+| Task | Story | Time |
+|------|-------|------|
+| T001: GH Actions workflow | s001-cicd | 18:20 |
 
 ---
 
 ## Quick Links
 
-| Doc | Purpose |
-|-----|---------|
-| [Vete Stories](pillars/healthcare-saas/projects/vete/epics/v003-security-devops/) | Nyx's tasks |
-| [Research Stories](pillars/research/projects/padic-bioinformatics/epics/r001-3adic-infrastructure/) | Erebus's tasks |
-| [CLAIMING-PROTOCOL.md](CLAIMING-PROTOCOL.md) | How to claim |
+| Epic | Path |
+|------|------|
+| v003-security-devops | `pillars/healthcare-saas/projects/vete/epics/v003-security-devops/` |
+| v004-code-quality | `pillars/healthcare-saas/projects/vete/epics/v004-code-quality/` |

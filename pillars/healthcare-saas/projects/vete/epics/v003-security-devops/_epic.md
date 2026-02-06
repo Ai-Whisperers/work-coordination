@@ -24,10 +24,11 @@ Harden security and establish CI/CD pipeline.
 
 | ID | Story | Status | Tasks |
 |----|-------|--------|-------|
-| [s001](s001-cicd-pipeline.md) | CI/CD Pipeline | 📋 Ready | 0/3 |
+| [s001](s001-cicd-pipeline.md) | CI/CD Pipeline | ⏳ Active | 1/3 |
 | [s002](s002-rate-limiting.md) | Rate Limiting | 📋 Ready | 0/2 |
 | [s003](s003-input-sanitization.md) | Input Sanitization | 📋 Ready | 0/2 |
 | [s004](s004-auth-hardening.md) | Auth Hardening | 📋 Ready | 0/2 |
+| [s005](s005-env-documentation.md) | Env Documentation | 📋 Ready | 0/3 |
 
 ---
 
