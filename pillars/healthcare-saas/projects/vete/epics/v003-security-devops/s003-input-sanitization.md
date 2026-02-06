@@ -29,7 +29,7 @@
 | ID | Task | Effort | Status | Owner |
 |----|------|--------|--------|-------|
 | T001 | Audit all API routes for input handling | 2h | ✅ | Nyx 🌙 |
-| T002 | Add Zod schemas to routes without validation | 4h | ⬜ | — |
+| T002 | Add Zod schemas to routes without validation | 4h | ⏳ | Nyx 🌙 |
 
 ---
 
