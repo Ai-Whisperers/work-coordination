@@ -28,7 +28,7 @@
 
 | ID | Task | Effort | Status | Owner |
 |----|------|--------|--------|-------|
-| T001 | Research and select rate limiting solution | 1h | ⏳ | Nyx 🌙 |
+| T001 | Research and select rate limiting solution | 1h | ✅ | Nyx 🌙 |
 | T002 | Implement rate limiter middleware | 3h | ⬜ | — |
 
 ---
@@ -56,6 +56,38 @@
 - Must work with Next.js App Router
 - Should be distributable (future multi-instance)
 - Cost-effective
+
+**Research Findings (Nyx 🌙):**
+
+**1. @upstash/ratelimit:**
+- ✅ **RECOMMENDED** - Excellent Next.js App Router support via middleware
+- ✅ Specifically designed for serverless/edge environments (Vercel, Cloudflare, etc.)
+- ✅ Redis-based = distributed across multiple instances 
+- ✅ Built-in features: sliding window, fixed window, token bucket algorithms
+- ✅ Proper HTTP headers (`X-RateLimit-Limit`, `X-RateLimit-Remaining`) 
+- ✅ Analytics dashboard and traffic protection features
+- ✅ Free tier: 10k requests/month, paid plans start ~$0.20/100k requests
+- ✅ Works in Next.js middleware.ts for global rate limiting
+- 📝 Requires Redis setup (Upstash provides free Redis instance)
+
+**2. next-rate-limit:**
+- ❌ **NOT RECOMMENDED** - Limited App Router compatibility  
+- ❌ In-memory only = doesn't work with multiple instances/serverless
+- ❌ Loses state on cold starts (problematic for Vercel/serverless)
+- ❌ No built-in middleware integration for App Router
+- ✅ Simple setup, no external dependencies
+- ⚠️ Only suitable for single-instance deployments
+
+**3. Custom with Supabase:**
+- ✅ Leverages existing Supabase infrastructure 
+- ✅ Distributed storage, works across instances
+- ❌ Requires custom implementation (significant development time)
+- ❌ Need to handle: sliding windows, cleanup, proper algorithms
+- ❌ No built-in middleware integration
+- ⚠️ Higher complexity = more bugs, maintenance overhead
+
+**Recommendation:**
+Use **@upstash/ratelimit** - it's purpose-built for Next.js App Router middleware, handles all edge cases, and provides enterprise features out of the box. The free tier covers initial usage, and pricing scales reasonably.
 
 ---
 
