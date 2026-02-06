@@ -1,90 +1,101 @@
 # Agent Registry
-_All AI agents in the AI Whisperers swarm_
+
+_Canonical list of all AI agents in the swarm_
+
+→ See [agents/](agents/) for detailed focus docs.
 
 ---
 
 ## Active Agents
 
-| Agent | Emoji | Device | Owner | Domain | Hours | Status |
-|-------|-------|--------|-------|--------|-------|--------|
-| Nyx | 🌙 | ai-whisperers-server | Ivan | Vete, infra, WhatsApp | 24/7 | ✅ Active |
-| Erebus | 🔥 | ai-whisperers-server | Ivan | Research, docs | 24/7 | ✅ Active |
-| Atlas | 🗼 | Jonathan's device | Jonathan | General, frontend | Variable | 🟡 Pending Setup |
+| Agent | Emoji | Host | ID | Status |
+|-------|-------|------|----|--------|
+| **Nyx** | 🌙 | ai-whisperers-server | `local` | ✅ Active |
+| **Erebus** | 🔥 | ai-whisperers-server | `erebus` | ✅ Active |
+| **Atlas** | 🗼 | Jonathan's local | TBD | ⏳ Pending |
 
 ---
 
-## Agent Details
+## Nyx 🌙
 
-### Nyx 🌙
-- **ID:** `local` on ai-whisperers-server
-- **Primary repos:** Vete, infrastructure
-- **Channels:** WhatsApp (primary), Telegram
-- **Cron jobs:** vete-worker (15min), vete-qa (20min), group-poller (1min)
-- **Contact:** @nyx in WhatsApp groups
+**Primary agent** — Server-based, 24/7
 
-### Erebus 🔥
-- **ID:** `erebus` on ai-whisperers-server
-- **Primary repos:** ternary-vaes-bioinformatics, research repos
-- **Channels:** Telegram (primary)
-- **Cron jobs:** erebus-worker (20min)
-- **Contact:** @erebus in groups
+| Property | Value |
+|----------|-------|
+| Host | ai-whisperers-server (192.168.100.219) |
+| OpenClaw ID | `local` |
+| Workspace | `~/.openclaw/workspace/` |
+| Model | claude-opus-4-5 |
+| Domain | Vete, infrastructure, coordination |
 
-### Atlas 🗼
-- **ID:** `local` on Jonathan's device
-- **Primary repos:** TBD
-- **Channels:** TBD
-- **Cron jobs:** TBD
-- **Contact:** @atlas in groups
-- **Setup guide:** [SETUP-ATLAS.md](templates/SETUP-ATLAS.md)
+**Channels:** WhatsApp (selfChat), Telegram (@AI_whisperBot), Webchat
+
+**Cron:** group-poller (5min), vete-worker (15min), vete-qa (20min), server-health (30min)
 
 ---
 
-## Adding a New Agent
+## Erebus 🔥
 
-1. **Install OpenClaw**
-   ```bash
-   npm install -g openclaw@latest
-   openclaw onboard --install-daemon
-   ```
+**Research agent** — Server-based, 24/7
 
-2. **Configure identity** in `~/.openclaw/openclaw.json`:
-   ```json
-   {
-     "agents": {
-       "list": [{
-         "id": "local",
-         "identity": {
-           "name": "YourAgentName",
-           "emoji": "🎯"
-         }
-       }]
-     }
-   }
-   ```
+| Property | Value |
+|----------|-------|
+| Host | ai-whisperers-server |
+| OpenClaw ID | `erebus` |
+| Workspace | `~/.openclaw/workspace-erebus/` |
+| Model | claude-opus-4-5 |
+| Domain | Research repos (9 repos) |
 
-3. **Create workspace files** (SOUL.md, AGENTS.md, etc.)
+**Cron:** erebus-worker (20min)
 
-4. **Register here** — Add a row to the table above
+---
 
-5. **Set up worker cron** — Configure autonomous work
+## Atlas 🗼
+
+**Local agent** — Jonathan's machine
+
+| Property | Value |
+|----------|-------|
+| Host | Jonathan's laptop/desktop |
+| OpenClaw ID | TBD |
+| Status | ⏳ Pending setup |
+| Domain | General, frontend, John's projects |
+
+**Setup:** [templates/SETUP-ATLAS.md](templates/SETUP-ATLAS.md)
+
+---
+
+## Adding an Agent
+
+1. Install OpenClaw: `npm install -g openclaw`
+2. Run setup: `openclaw setup`
+3. Create workspace from templates
+4. Add entry here
+5. Create focus doc in `agents/<name>/FOCUS.md`
+6. Clone work-coordination + target repos
+7. Set up heartbeat cron
 
 ---
 
 ## Agent Communication
 
-- **Async:** Update this repo (git push/pull)
-- **Real-time:** WhatsApp group (AI Whisperers)
-- **Direct:** `sessions_send` tool (requires connectivity)
+| Method | Use Case |
+|--------|----------|
+| work-coordination repo | Task claiming (atomic via git) |
+| sessions_send | Direct agent-to-agent messages |
+| WhatsApp groups | Human-visible coordination |
+| Telegram | Notifications |
 
 ---
 
 ## Domain Ownership
 
-| Domain | Primary | Backup | Notes |
-|--------|---------|--------|-------|
-| Vete backend | Nyx 🌙 | Erebus 🔥 | API, services, DB |
-| Vete frontend | Atlas 🗼 | Nyx 🌙 | UI, components |
-| Research repos | Erebus 🔥 | Atlas 🗼 | Python, ML |
-| Documentation | Atlas 🗼 | Erebus 🔥 | READMEs, guides |
-| CI/CD | Nyx 🌙 | Any | GitHub Actions |
-| DevOps | Nyx 🌙 | Atlas 🗼 | Docker, deploy |
+| Domain | Primary | Backup |
+|--------|---------|--------|
+| Vete | Nyx 🌙 | — |
+| Research | Erebus 🔥 | — |
+| Infrastructure | Atlas 🗼 | Nyx 🌙 |
+| Healthcare | — | Any |
+| Education | — | Any |
+| Marketing | — | Any |
+| Tools | — | Any |

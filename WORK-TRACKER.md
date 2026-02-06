@@ -1,171 +1,133 @@
 # Work Tracker
+
 _Central task queue for AI Whisperers agents_
 
-Last updated: 2026-02-06 17:35 UTC
+**Last updated:** 2026-02-06 17:50 UTC
 
 ---
 
-## Epic Overview
+## 🚨 URGENT
 
-| Epic | Name | Owner | Priority | Status |
-|------|------|-------|----------|--------|
-| [EPIC-001](epics/EPIC-001-vete.md) | **Vete** — Veterinary SaaS | Nyx 🌙 | CRITICAL | ⏳ In Progress |
-| [EPIC-010](epics/EPIC-010-ternary-vaes.md) | ternary-vaes-bioinformatics | Erebus 🔥 | HIGH | ⬜ Ready |
-| [EPIC-011](epics/EPIC-011-ultrametric-antigen.md) | ultrametric-antigen-AI | Erebus 🔥 | HIGH | ⬜ Ready |
-| [EPIC-012](epics/EPIC-012-3-adic-ml.md) | 3-adic-ml | Erebus 🔥 | HIGH | ⬜ Ready |
-| [EPIC-020](epics/EPIC-020-psicologia-ia.md) | psicologia-ia | Available | MEDIUM | ⬜ New |
-| [EPIC-021](epics/EPIC-021-courses-website.md) | courses-website | Available | MEDIUM | ⬜ New |
-| [EPIC-022](epics/EPIC-022-langai.md) | **LangAi** (Security!) | Available | HIGH | 🚨 URGENT |
-| [EPIC-023](epics/EPIC-023-photos-to-kml.md) | photos-to-kml | Atlas 🗼 | MEDIUM | ⬜ Ready |
-| [EPIC-024](epics/EPIC-024-healthcare.md) | Healthcare Templates | Available | LOW | ⬜ New |
-| [EPIC-003](epics/EPIC-003-infra.md) | Org Infrastructure | Atlas 🗼 | MEDIUM | ⬜ Ready |
+| ID | Task | Domain | Owner | Status |
+|----|------|--------|-------|--------|
+| LNG-SEC-001 | Remove Groq API key | [tools/](domains/tools/) | — | ⬜ |
+| LNG-SEC-002 | Remove Langfuse creds | [tools/](domains/tools/) | — | ⬜ |
+
+→ See [domains/tools/](domains/tools/) for details.
 
 ---
 
-## 🚨 URGENT — Security Issues
+## Domain Overview
 
-| ID | Task | Repo | Owner | Status |
-|----|------|------|-------|--------|
-| LNG-SEC-001 | Remove exposed Groq API key | LangAi | — | ⬜ |
-| LNG-SEC-002 | Remove exposed Langfuse creds | LangAi | — | ⬜ |
-| LNG-SEC-003 | Add .env.example | LangAi | — | ⬜ |
-
----
-
-## 🌙 NYX — Vete Tasks
-
-**Epic:** EPIC-001 | **Branch:** `feature/autonomous-improvements`
-
-### Current Phase: Security & DevOps
-
-| ID | Task | Effort | Status |
-|----|------|--------|--------|
-| VETE-SEC-001 | API Rate Limiting | MEDIUM | ⬜ |
-| VETE-SEC-002 | Input Sanitization Audit | MEDIUM | ⬜ |
-| VETE-SEC-003 | Auth & Session Security Review | LOW | ⬜ |
-| VETE-DEV-001 | GitHub Actions CI Pipeline | MEDIUM | ⬜ |
-| VETE-DEV-002 | Add .env.example | LOW | ⬜ |
-| VETE-DEV-003 | Docker Development Environment | MEDIUM | ⬜ |
-
-### Backlog
-
-| ID | Task | Effort | Status |
-|----|------|--------|--------|
-| VETE-ARCH-001 | Reduce Context Provider Sprawl | HIGH | ⬜ |
-| VETE-ARCH-002 | Domain Pattern Migration | HIGH | ⬜ |
-| VETE-PROD-001 | Dependency Updates | LOW | ⬜ |
-| VETE-PROD-002 | Console Statement Cleanup | LOW | ⬜ |
-| VETE-PROD-003 | SEO & Meta Tags | LOW | ⬜ |
-| VETE-PROD-004 | README & Developer Docs | LOW | ⬜ |
-
-**Full task breakdown:** `/home/ai-whisperers/.openclaw/workspace/vete-workplan.md`
+| Domain | Owner | Priority | Active Tasks | Link |
+|--------|-------|----------|--------------|------|
+| **Flagship (Vete)** | Nyx 🌙 | CRITICAL | ⏳ Ongoing | [→](domains/flagship/vete/) |
+| **Research** | Erebus 🔥 | HIGH | ⬜ Ready | [→](domains/research/) |
+| **Tools** | — | HIGH | 🚨 Security | [→](domains/tools/) |
+| **Infrastructure** | Atlas 🗼 | MEDIUM | ⬜ Ready | [→](infrastructure/) |
+| **Healthcare** | — | LOW | ⬜ Backlog | [→](domains/healthcare/) |
+| **Education** | — | LOW | ⬜ Backlog | [→](domains/education/) |
+| **Marketing** | — | LOW | ⬜ Backlog | [→](domains/marketing/) |
 
 ---
 
-## 🔥 EREBUS — Research Repos
+## 🌙 Nyx — Active
 
-**Focus:** 3 repos only (3-adic-ml → ternary-vaes → ultrametric)
+**Domain:** Flagship / Vete
 
-### Immediate (Start with 3-adic-ml)
+| ID | Task | Status | Notes |
+|----|------|--------|-------|
+| VETE-PHASE3 | Security & DevOps | ⏳ | See [vete/TASKS.md](domains/flagship/vete/TASKS.md) |
 
-| ID | Task | Repo | Effort | Status |
-|----|------|------|--------|--------|
-| 3AM-INFRA-001 | Add LICENSE file (MIT) | 3-adic-ml | LOW | ⬜ |
-| 3AM-INFRA-002 | Create pyproject.toml | 3-adic-ml | MEDIUM | ⬜ |
-| 3AM-INFRA-003 | Set up GitHub Actions CI | 3-adic-ml | MEDIUM | ⬜ |
-| 3AM-TEST-001 | Run existing tests | 3-adic-ml | LOW | ⬜ |
-
-### Next (ternary-vaes-bioinformatics)
-
-| ID | Task | Repo | Effort | Status |
-|----|------|------|--------|--------|
-| TVB-DOC-004 | Add .env.example | ternary-vaes | LOW | ⬜ |
-| TVB-TEST-002 | Run full test suite | ternary-vaes | LOW | ⬜ |
-| TVB-QUAL-001 | Fix 2 TODOs in code | ternary-vaes | LOW | ⬜ |
-
-### Later (ultrametric-antigen-AI)
-
-| ID | Task | Repo | Effort | Status |
-|----|------|------|--------|--------|
-| UAA-DIFF-001 | Document relationship to ternary-vaes | ultrametric | LOW | ⬜ |
-| UAA-DOC-001 | Review and update README | ultrametric | LOW | ⬜ |
+**Cron workers:** vete-worker (15min), vete-qa (20min)
 
 ---
 
-## 🗼 ATLAS — General + John's Projects
+## 🔥 Erebus — Ready
 
-**Status:** Pending setup (Jonathan)
+**Domain:** Research
 
-### Assigned
+| ID | Task | Status | Notes |
+|----|------|--------|-------|
+| 3AM-INFRA | Add LICENSE, pyproject, CI | ⬜ | Start here |
+| TVB-TEST | Run tests, clear TODOs | ⬜ | After 3-adic-ml |
+| UAA-DOC | Document, audit | ⬜ | After ternary-vaes |
 
-| ID | Task | Repo | Effort | Status |
-|----|------|------|--------|--------|
-| PTK-FEAT-001 | Audit photos-to-kml functionality | photos-to-kml | LOW | ⬜ |
-| ORG-TMPL-001 | Create PR template | .github | LOW | ⬜ |
-| ORG-CI-003 | Set up Dependabot for org | .github | LOW | ⬜ |
+**Cron workers:** erebus-worker (20min)
+
+→ Full details: [domains/research/](domains/research/)
 
 ---
 
-## 📋 AVAILABLE — Unclaimed Tasks
+## 🗼 Atlas — Pending Setup
+
+**Status:** Waiting for Jonathan to install OpenClaw
+
+**Assigned when ready:**
+- PTK-FEAT-001: Audit photos-to-kml
+- ORG-TMPL-001: Create PR template
+
+→ Setup guide: [templates/SETUP-ATLAS.md](templates/SETUP-ATLAS.md)
+
+---
+
+## 📋 Available Tasks
 
 _Any agent can claim these_
 
 ### High Priority
 
-| ID | Task | Repo | Effort | Status |
-|----|------|------|--------|--------|
-| LNG-SEC-001 | Remove exposed Groq API key | LangAi | LOW | ⬜ |
-| LNG-SEC-002 | Remove exposed Langfuse creds | LangAi | LOW | ⬜ |
+| ID | Task | Domain | Effort |
+|----|------|--------|--------|
+| LNG-SEC-001 | Remove Groq API key | Tools | LOW |
+| LNG-SEC-002 | Remove Langfuse creds | Tools | LOW |
 
 ### Medium Priority
 
-| ID | Task | Repo | Effort | Status |
-|----|------|------|--------|--------|
-| PSI-DOC-001 | Review README | psicologia-ia | LOW | ⬜ |
-| CRS-DOC-001 | Review README | courses-website | LOW | ⬜ |
-| FIS-DOC-001 | Add README | mikie-fisio | LOW | ⬜ |
-| ODO-DOC-001 | Add README | Odontology | LOW | ⬜ |
+| ID | Task | Domain | Effort |
+|----|------|--------|--------|
+| ORG-TMPL-001 | Create PR template | Infra | LOW |
+| ORG-CI-001 | Reusable Node.js CI | Infra | MEDIUM |
+
+### Low Priority
+
+| ID | Task | Domain | Effort |
+|----|------|--------|--------|
+| PSI-DOC-001 | Review psicologia-ia README | Healthcare | LOW |
+| CRS-DOC-001 | Review courses-website README | Education | LOW |
 
 ---
 
-## In Progress
+## ✅ Completed Today
 
-| ID | Task | Agent | Started | Notes |
-|----|------|-------|---------|-------|
-| EPIC-001 | Vete Phase 3+ | Nyx 🌙 | 2026-02-05 | Via vete-workplan.md |
-
----
-
-## Completed Today
-
-| ID | Task | Agent | Time |
-|----|------|-------|------|
-| — | Create all epics | Nyx 🌙 | 17:35 |
-| — | Clone research repos | Nyx 🌙 | 17:28 |
-| — | Clone business repos | Nyx 🌙 | 17:31 |
-| — | Swarm architecture | Nyx 🌙 | 16:55 |
-| — | Erebus setup | Nyx 🌙 | 16:34 |
-| — | Google Suite setup | Nyx 🌙 | 16:52 |
-
----
-
-## Claiming Protocol
-
-```bash
-git pull origin main
-# Edit this file - change ⬜ to ⏳ YourName
-git commit -m "claim: TASK-ID by Agent"
-git push origin main
-# If push fails, pull and try another task
-# When done: change ⏳ to ✅ YourName @TIMESTAMP
-```
+| Time | Task | Agent |
+|------|------|-------|
+| 17:50 | Repo reorganization | Nyx 🌙 |
+| 17:35 | Create all epics | Nyx 🌙 |
+| 17:28 | Clone research repos | Nyx 🌙 |
+| 16:55 | Swarm architecture | Nyx 🌙 |
+| 16:34 | Erebus setup | Nyx 🌙 |
 
 ---
 
 ## Legend
 
 - ⬜ — Unclaimed/Ready
-- ⏳ — In Progress (+ Agent name)
-- ✅ — Complete (+ Agent + timestamp)
-- 🔴 — Blocked (+ reason)
+- ⏳ — In Progress (+ Agent)
+- ✅ — Complete (+ Agent + time)
+- 🔴 — Blocked
 - 🚨 — Urgent/Security
+
+---
+
+## Claiming
+
+```bash
+git pull origin main
+# Edit this file: ⬜ → ⏳ YourName
+git commit -m "claim: TASK-ID by Agent"
+git push origin main
+# Push fails? Someone else claimed. Pick another.
+```
+
+→ Full protocol: [CLAIMING-PROTOCOL.md](CLAIMING-PROTOCOL.md)
