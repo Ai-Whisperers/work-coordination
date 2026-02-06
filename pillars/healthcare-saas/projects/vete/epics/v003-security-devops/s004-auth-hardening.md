@@ -28,7 +28,7 @@
 
 | ID | Task | Effort | Status | Owner |
 |----|------|--------|--------|-------|
-| T001 | Review Supabase auth configuration | 1h | ⬜ | — |
+| T001 | Review Supabase auth configuration | 1h | ⏳ | Nyx 🌙 |
 | T002 | Implement failed login monitoring | 2h | ⬜ | — |
 
 ---

@@ -29,7 +29,7 @@
 | ID | Task | Effort | Status | Owner |
 |----|------|--------|--------|-------|
 | T001 | Research and select rate limiting solution | 1h | ✅ | Nyx 🌙 |
-| T002 | Implement rate limiter middleware | 3h | ⬜ | — |
+| T002 | Implement rate limiter middleware | 3h | ⏳ | Nyx 🌙 |
 
 ---
 
