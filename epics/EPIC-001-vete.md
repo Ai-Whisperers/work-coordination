@@ -1,61 +1,125 @@
-# EPIC-001: Vete Production Readiness
+# EPIC-001: Vete — Production Readiness
 
 **Owner:** Nyx 🌙  
 **Status:** In Progress  
-**Priority:** HIGH  
+**Priority:** CRITICAL  
 **Created:** 2026-02-05  
+**Repo:** https://github.com/Ai-Whisperers/Vete  
+**Local:** `/home/ai-whisperers/Vete/web`  
+**Branch:** `feature/autonomous-improvements` (PR #39)
 
 ---
 
-## Goal
+## Overview
 
-Get Vete veterinary SaaS to production-ready state.
+Vete is a multi-tenant veterinary clinic management SaaS for Latin America. Our primary product.
+
+**Stack:** Next.js 15, Supabase, TypeScript, Tailwind
 
 ## Current State
 
-- **Unit tests:** 1,626 passing
-- **API tests:** 292/628 passing (infrastructure issues)
-- **PR #39:** Active on `feature/autonomous-improvements`
+| Metric | Value | Target |
+|--------|-------|--------|
+| TypeScript files | 2,362 | — |
+| Unit tests | 1,626 passing | 2,000+ |
+| API tests | 292/628 passing (46%) | 80%+ |
+| Lint warnings | 96 | 0 |
+| `any` types | 99 | <30 |
+| CI/CD | ❌ None | ✅ Full pipeline |
 
-## Detailed Tracker
+## Detailed Task Tracker
 
-Full task breakdown: `/home/ai-whisperers/.openclaw/workspace/vete-workplan.md`
+**Full breakdown:** `/home/ai-whisperers/.openclaw/workspace/vete-workplan.md`
 
-## Phases
+---
 
-### Phase 1 ✅ (Complete)
-- Root cleanup, API test infra, auth fixes
-- 30 commits merged to main (PR #38)
+## Phase Summary
 
-### Phase 2 ✅ (Complete)
-- API test fixes, lint cleanup, integration tests
-- DB optimization, bundle size, accessibility
+### Phase 1 ✅ COMPLETE (PR #38 merged)
+- Root cleanup, API test infrastructure
+- Auth fixes, integration tests
+- Domain patterns, security/GDPR
+- Monitoring, notifications
+- **30 commits merged to main**
 
-### Phase 3 ⏳ (In Progress)
-- Error handling enhancement
-- React hook dependencies audit
-- TypeScript strict mode
-- Performance monitoring
+### Phase 2 ✅ COMPLETE
+- API test fixes (0 → 292 passing)
+- Lint warnings (116 → 96)
+- Integration test fixes
+- DB query optimization (8+ indexes)
+- Bundle size optimization
+- Accessibility improvements
 
-### Phase 4-10 (Queued)
-- Image optimization
-- i18n coverage
-- Test coverage expansion
-- Security hardening
-- CI/CD pipeline
-- Code architecture improvements
-- Production readiness
+### Phase 3 ⏳ IN PROGRESS
+| Task | Status |
+|------|--------|
+| Error Handling Enhancement | ✅ |
+| React Hook Dependencies Audit | ✅ |
+| TypeScript Strict Mode | ✅ |
+| Performance Monitoring | ✅ |
+| Image Optimization | ✅ |
+| i18n Coverage | ✅ |
+| API Route Test Coverage | ✅ |
+| Service Unit Test Gaps | ✅ |
+| E2E Test Suite | ✅ |
+| Component Test Coverage | ✅ |
 
-## Blockers
+### Phase 4 ⬜ SECURITY
+| ID | Task | Effort | Status |
+|----|------|--------|--------|
+| VETE-SEC-001 | API Rate Limiting | MEDIUM | ⬜ |
+| VETE-SEC-002 | Input Sanitization Audit | MEDIUM | ⬜ |
+| VETE-SEC-003 | Auth & Session Security Review | LOW | ⬜ |
 
-- API test infrastructure needs repair (auth issues)
-- DB schema drift in integration tests
+### Phase 5 ⬜ DEVOPS
+| ID | Task | Effort | Status |
+|----|------|--------|--------|
+| VETE-DEV-001 | GitHub Actions CI Pipeline | MEDIUM | ⬜ |
+| VETE-DEV-002 | Environment Configuration (.env.example) | LOW | ⬜ |
+| VETE-DEV-003 | Docker Development Environment | MEDIUM | ⬜ |
+
+### Phase 6 ⬜ ARCHITECTURE
+| ID | Task | Effort | Status |
+|----|------|--------|--------|
+| VETE-ARCH-001 | Reduce Context Provider Sprawl | HIGH | ⬜ |
+| VETE-ARCH-002 | Domain Pattern Migration | HIGH | ⬜ |
+| VETE-ARCH-003 | Component Library Documentation | LOW | ⬜ |
+
+### Phase 7 ⬜ PRODUCTION
+| ID | Task | Effort | Status |
+|----|------|--------|--------|
+| VETE-PROD-001 | Dependency Updates | LOW | ⬜ |
+| VETE-PROD-002 | Console Statement Cleanup | LOW | ⬜ |
+| VETE-PROD-003 | SEO & Meta Tags | LOW | ⬜ |
+| VETE-PROD-004 | README & Developer Docs | LOW | ⬜ |
+
+---
+
+## Critical Blockers
+
+### QA-001: API Test Infrastructure
+- `createTestAuthUser` failing with email validation
+- Blocks: All API test expansion
+- Priority: CRITICAL
+
+### QA-006: Store Schema Drift  
+- Missing `is_prescription_required` column
+- Blocks: Store integration tests
+- Priority: CRITICAL
+
+---
 
 ## Definition of Done
 
-- [ ] All unit tests passing
-- [ ] API test suite >80% passing
-- [ ] No critical security issues
+- [ ] All unit tests passing (1,626+)
+- [ ] API tests >80% passing
 - [ ] CI/CD pipeline active
+- [ ] No critical security issues
+- [ ] Docker development setup
 - [ ] Documentation complete
-- [ ] Production deployment successful
+- [ ] Production deployment on GCP
+
+## Workers
+
+- `vete-worker` — Executes tasks (every 15min)
+- `vete-qa` — Runs tests, finds regressions (every 20min)
