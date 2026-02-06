@@ -19,7 +19,7 @@
 - [x] GitHub Actions workflow triggers on push and PR
 - [ ] Unit tests run in CI
 - [ ] API tests run in CI
-- [ ] PR cannot be merged if tests fail
+- [x] PR cannot be merged if tests fail
 - [ ] Build time < 5 minutes
 
 ---
@@ -30,7 +30,7 @@
 |----|------|--------|--------|-------|
 | T001 | Create GitHub Actions workflow file | 2h | ✅ | Nyx 🌙 |
 | T002 | Configure Node.js version matrix | 30m | ✅ | Nyx 🌙 |
-| T003 | Add branch protection rules | 30m | ⏳ | Nyx 🌙 |
+| T003 | Add branch protection rules | 30m | ✅ | Nyx 🌙 |
 
 ---
 
