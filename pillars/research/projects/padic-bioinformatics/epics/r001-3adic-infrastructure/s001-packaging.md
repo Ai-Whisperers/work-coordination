@@ -28,7 +28,7 @@
 | ID | Task | Effort | Status | Owner |
 |----|------|--------|--------|-------|
 | T001 | Add MIT LICENSE file | 15m | ✅ | Erebus 🔥 |
-| T002 | Create pyproject.toml | 1h | ⬜ | — |
+| T002 | Create pyproject.toml | 1h | ⏳ | Erebus 🔥 |
 | T003 | Update README with install instructions | 30m | ⬜ | — |
 
 ---
