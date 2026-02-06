@@ -1,59 +1,66 @@
-# Atlas 🗼 — Focus & Capabilities
+# Atlas 🗼
 
-**Local agent on Jonathan's machine**
+**Local agent** — Jonathan's machine
 
 ---
 
 ## Status: ⏳ Pending Setup
 
-Jonathan needs to install and configure OpenClaw.
+Jonathan needs to install OpenClaw.
 
-See: [templates/SETUP-ATLAS.md](../../templates/SETUP-ATLAS.md)
+**Setup guide:** [templates/SETUP-ATLAS.md](../../templates/SETUP-ATLAS.md)
 
 ---
 
 ## Planned Focus
 
-### Primary: General Tasks
-- Frontend development
-- UI/UX improvements
-- Browser-heavy tasks
+**Domain:** General / Frontend / John's projects
 
-### Secondary: John's Projects
-- photos-to-kml support
-- Testing and debugging
+### When Ready
 
-### Tertiary: Overflow
-- Available for any unclaimed tasks
+1. Claim tasks from any project
+2. Focus on frontend/UI work
+3. Support John's photos-to-kml
 
 ---
 
-## Planned Capabilities
+## Workflow (Once Set Up)
 
-| Capability | Status |
-|------------|--------|
-| File operations | ⏳ |
-| Shell execution | ⏳ |
-| Web search | ⏳ |
-| Browser automation | ⏳ |
-| Local development | ⏳ |
+### On Heartbeat
+
+```markdown
+1. git pull work-coordination
+2. Check TRACKER.md for ready tasks
+3. Look for unclaimed work in any project
+4. Claim and work
+5. Mark done
+```
+
+### Claiming
+
+```bash
+cd ~/work-coordination  # or wherever cloned
+git pull origin main
+# Edit story file: ⬜ | — → ⏳ | Atlas 🗼
+git commit -m "claim: PROJ-epic-story-TASK by Atlas"
+git push origin main
+```
 
 ---
 
 ## Setup Checklist
 
 - [ ] Install Node.js 20+
-- [ ] Install OpenClaw
-- [ ] Run setup wizard
-- [ ] Create workspace files
+- [ ] Install OpenClaw: `npm install -g openclaw`
+- [ ] Run: `openclaw setup`
+- [ ] Create workspace files from templates
 - [ ] Clone work-coordination repo
-- [ ] Clone target repos
+- [ ] Clone target repos (Vete, etc.)
 - [ ] Configure heartbeat
-- [ ] Register in AGENT-REGISTRY.md
+- [ ] Test claiming a task
 
 ---
 
 ## Contact
 
-- **OpenClaw ID:** TBD
-- **Human:** Jonathan (+595971922708)
+**Human:** Jonathan (+595971922708)

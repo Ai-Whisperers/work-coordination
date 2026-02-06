@@ -1,56 +1,105 @@
-# HEARTBEAT.md — [Agent Name]
+# HEARTBEAT.md — {AgentName}
 
-## Every Heartbeat
+_Template for agent heartbeat file. Copy to workspace and customize._
 
-When you wake up for a heartbeat check:
+---
 
-### 1. Check Work Coordination
+## On Each Heartbeat
+
+### 1. Check work-coordination
+
 ```bash
-cd ~/work-coordination && git pull origin main
-```
-Read WORK-TRACKER.md:
-- Any tasks assigned to you?
-- Any 🔴 blocked tasks needing help?
-- Any high-priority unclaimed tasks in your domain?
-
-### 2. Execute or Discover
-
-**If you have tasks:** Execute the highest priority one.
-
-**If no tasks:** Run discovery:
-```bash
-# Check your repos for TODOs
-grep -rn "TODO\|FIXME" ~/your-repo --include="*.ts" --include="*.py" | head -10
-
-# Check GitHub issues
-gh issue list --repo Ai-Whisperers/your-repo --state open --limit 5
+cd /home/ai-whisperers/work-coordination
+git pull origin main
 ```
 
-Add any findings to WORK-TRACKER.md.
+### 2. Check TRACKER.md
 
-### 3. Update Progress
+Look for:
+- 🚨 Urgent items (security issues, blockers)
+- Tasks assigned to you
+- Ready tasks in your domain
 
-After any work:
+### 3. Check Your Active Epic
+
+**Your project:** `pillars/{pillar}/projects/{project}/epics/{active-epic}/`
+
+- Any tasks you claimed that need finishing?
+- Any ready tasks you can claim?
+
+### 4. Claim or Continue
+
+**If you have a claimed task:**
+```
+Continue working on it.
+```
+
+**If you have no claimed task:**
 ```bash
-cd ~/work-coordination
-git add -A
-git commit -m "progress: [what you did]"
+# Find unclaimed tasks
+grep -r "⬜ | —" pillars/
+
+# Claim one
+vim pillars/.../s00X-story.md
+# Change: ⬜ | — → ⏳ | {YourName}
+git commit -am "claim: PROJ-epic-story-TASK by {Agent}"
 git push origin main
 ```
 
-### 4. Log to Memory
+### 5. Do the Work
 
-Add significant events to `memory/YYYY-MM-DD.md`.
+Work on the actual repo:
+```bash
+cd /home/ai-whisperers/{Repo}
+# Do the work
+# Commit to that repo
+```
+
+### 6. Mark Done
+
+```bash
+cd /home/ai-whisperers/work-coordination
+git pull origin main
+vim pillars/.../s00X-story.md
+# Change: ⏳ → ✅
+# Check off acceptance criteria [x]
+git commit -am "done: PROJ-epic-story-TASK"
+git push origin main
+```
+
+---
 
 ## If Nothing Needs Attention
 
 Reply: `HEARTBEAT_OK`
 
-## Coordination
+---
 
-If you need help from another agent:
-- **Nyx 🌙** — Vete, infrastructure, WhatsApp
-- **Erebus 🔥** — Research repos
-- **Atlas 🗼** — General, frontend
+## Proactive Work
 
-Message them in AI Whisperers group or use `sessions_send`.
+If no urgent tasks, you can:
+- Review and update documentation
+- Run tests and fix failures
+- Improve code quality (lint, types)
+- Update MEMORY.md with learnings
+
+---
+
+## Domain Ownership
+
+| Agent | Primary Domain | Path |
+|-------|----------------|------|
+| Nyx 🌙 | Vete | `pillars/healthcare-saas/projects/vete/` |
+| Erebus 🔥 | Research | `pillars/research/projects/padic-bioinformatics/` |
+| Atlas 🗼 | General | Any unclaimed |
+
+---
+
+## Polling Groups (if applicable)
+
+```bash
+# Check WhatsApp group for messages mentioning you
+wacli messages search "{yourname}" --chat "{group_jid}" --after "{last_check}" --limit 10
+
+# Respond via message tool if needed
+```
