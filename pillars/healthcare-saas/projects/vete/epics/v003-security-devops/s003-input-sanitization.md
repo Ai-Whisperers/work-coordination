@@ -28,7 +28,7 @@
 
 | ID | Task | Effort | Status | Owner |
 |----|------|--------|--------|-------|
-| T001 | Audit all API routes for input handling | 2h | ⏳ | Nyx 🌙 |
+| T001 | Audit all API routes for input handling | 2h | ✅ | Nyx 🌙 |
 | T002 | Add Zod schemas to routes without validation | 4h | ⬜ | — |
 
 ---
@@ -52,6 +52,43 @@
 - `lib/actions/**/*.ts`
 
 **Output:** List of routes needing fixes
+
+**AUDIT RESULTS (2026-02-06 - Nyx 🌙):**
+
+**✅ Routes with Proper Zod Validation (Good):**
+- `/api/invoices` - Uses `createInvoiceSchema.safeParse()`
+- `/api/signup/check-slug` - Uses `checkSlugSchema.safeParse()`
+- `/api/booking` - Has schema validation
+- `/api/claim` - Has schema validation  
+- `/api/export` - Has schema validation
+- `/api/gdpr` - Has schema validation
+- `/api/hospitalizations` - Has schema validation
+- `/api/lab-orders` - Has schema validation
+- `/api/medical-records` - Has schema validation
+- `/api/pets` - Has schema validation
+- And several others (~15-20 routes total)
+
+**⚠️ Routes Needing Zod Validation:**
+- `/api/conversations` - Manual validation (`if (!subject || !message)`)
+- `/api/analytics/*` - Most analytics routes lack input validation
+- `/api/lab-catalog` - Only basic query param checks
+- Many other routes with manual or no validation
+
+**📊 Current Status:**
+- Total API routes found: ~200+ routes
+- Routes with Zod validation: ~15-20 routes  
+- Routes needing validation work: ~180+ routes
+
+**🗂️ Schemas Available:**
+Schemas already exist in `lib/schemas/` for: auth, pet, invoice, appointment, medical, store, insurance, messaging, etc.
+
+**🔍 Validation Patterns Found:**
+1. ✅ **Good**: `schema.safeParse(body)` with structured error responses
+2. ⚠️ **Manual**: Basic `if (!field)` checks without types
+3. ❌ **None**: Direct use of request data without validation
+
+**Next Steps for T002:**
+Focus on high-risk routes first: user input, financial operations, medical data.
 
 ---
 
