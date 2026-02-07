@@ -28,7 +28,7 @@
 
 | ID | Task | Effort | Status | Owner |
 |----|------|--------|--------|-------|
-| T001 | Search Google Maps for vet clinics | 30m | ⏳ | Nyx 🌙 |
+| T001 | Search Google Maps for vet clinics | 30m | ✅ | Nyx 🌙 |
 | T002 | Search Instagram/Facebook for clinics | 30m | ⬜ | — |
 | T003 | Get contact info from websites | 30m | ⬜ | — |
 | T004 | Create tracking spreadsheet | 15m | ⬜ | — |
