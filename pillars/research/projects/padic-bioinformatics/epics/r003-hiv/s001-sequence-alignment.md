@@ -24,7 +24,7 @@ As a researcher, I want to align HIV sequences so I can analyze evolutionary pat
 | T004 | Create alignment viewer | 2h | ✅ | Erebus 🔥 |
 | T005 | Calculate conservation scores | 1h | ✅ | Erebus 🔥 |
 | T006 | Add FASTA/Clustal export | 1h | ✅ | Erebus 🔥 |
-| T007 | Document workflow | 1h | ⏳ | Erebus 🔥 |
+| T007 | Document workflow | 1h | ✅ | Erebus 🔥 |
 
 ## Technical Notes
 - Data: HIV-1 pol/env sequences
