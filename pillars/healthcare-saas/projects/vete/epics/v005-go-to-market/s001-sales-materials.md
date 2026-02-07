@@ -32,7 +32,7 @@
 | T002 | Capture product screenshots | 30m | ⬜ | — |
 | T003 | Create pricing one-pager | 30m | ⬜ | — |
 | T004 | Write WhatsApp pitch template | 30m | ✅ | Nyx 🌙 |
-| T005 | Write email pitch template | 30m | ⬜ | — |
+| T005 | Write email pitch template | 30m | ✅ | Nyx 🌙 |
 
 ---
 
