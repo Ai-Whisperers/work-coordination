@@ -54,7 +54,7 @@ _All hands on Vete_
 
 | Task | Story | Epic | Owner |
 |------|-------|------|-------|
-| T002: Add Zod schemas (103/312) | s003-input-sanitization | v003 | Nyx 🌙 |
+| T002: Add Zod schemas (104/312) | s003-input-sanitization | v003 | Nyx 🌙 |
 
 ---
 
@@ -68,7 +68,7 @@ _All hands on Vete_
 | s004-auth-hardening | ✅ Complete | 2/2 |
 | s005-env-documentation | ✅ Complete | 3/3 |
 
-**Remaining:** T002 - Add Zod schemas (103/312 routes done, ~33%)
+**Remaining:** T002 - Add Zod schemas (104/312 routes done, ~33%)
 
 ---
 
