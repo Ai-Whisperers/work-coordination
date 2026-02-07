@@ -24,7 +24,7 @@ As the business owner, I want a clear pricing strategy so we can monetize sustai
 | T003 | Create feature matrix | 30m | ✅ | Nyx 🌙 |
 | T004 | Set PYG/USD pricing | 20m | ✅ | Nyx 🌙 |
 | T005 | Define payment terms | 20m | ✅ | Nyx 🌙 |
-| T006 | Create contract template | 30m | ⬜ | — |
+| T006 | Create contract template | 30m | ⏳ | Nyx 🌙 |
 | T007 | Build pricing page | 30m | ⬜ | — |
 
 ## Proposed Tiers
