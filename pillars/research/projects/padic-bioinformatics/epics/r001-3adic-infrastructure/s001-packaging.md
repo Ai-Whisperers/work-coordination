@@ -20,7 +20,7 @@ As a researcher, I want proper Python packaging so the library can be installed 
 |----|------|-----|--------|----------|
 | T001 | Add MIT LICENSE file | 15m | ✅ | Erebus 🔥 |
 | T002 | Create pyproject.toml | 30m | ✅ | Erebus 🔥 |
-| T003 | Write README with examples | 45m | ⏳ | Erebus 🔥 |
+| T003 | Write README with examples | 45m | ✅ | Erebus 🔥 |
 | T004 | Add __init__.py files | 20m | ✅ | Erebus 🔥 |
 | T005 | Test pip install -e . | 20m | ⬜ | — |
 | T006 | Add version file | 15m | ⬜ | — |
