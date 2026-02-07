@@ -1,0 +1,610 @@
+{
+  "run_at": "2026-02-07T11:12:01.737591",
+  "repos": [
+    {
+      "repo": "Vete",
+      "path": "/home/ai-whisperers/Vete/web",
+      "tier": "P0",
+      "findings": [
+        {
+          "type": "todo",
+          "raw": "./data/toxic-foods.ts:63:  // ALTA TOXICIDAD - TODOS LOS ANIMALES",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./app/api/ambassador/validate/route.ts:4: * GET /api/ambassador/validate?code=XXX - Validate an ambassador referral code",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./app/api/referrals/validate/route.ts:4: * GET /api/referrals/validate?code=XXX - Validate a referral code (public endpoint)",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./app/api/billing/bank-transfer/route.ts:20:    account_number: 'XXXX-XXXX-XXXX-1234', // Masked for security",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./app/api/billing/bank-transfer/route.ts:31:    account_number: 'XXXX-XXXX-XXXX-5678',",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./app/api/billing/bank-transfer/route.ts:121:    support_phone: '+595 21 XXX XXXX',",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./tests/integration/lab/order-placement.test.ts:5: * - Order number generation (LAB-YYYYMMDD-XXXX)",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./tests/unit/lib/text-formatting.test.ts:268:      expect(maskText('0981123456', 2, 'X')).toBe('09XXXXXX56')",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./e2e/visual/charges-validation.spec.ts:49:    // Assert format: \"Gs X.XXX\" or \"Gs XX.XXX\"",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./db/seeds/scripts/seed.ts:1063:      // Generate admission number: HOSP-YYYYMMDD-XXX",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./lib/signup/schema.ts:45: * Paraguay RUC format: XXXXXXXX-X (8 digits, dash, 1 digit)",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./lib/signup/schema.ts:46: * Or older format: XXXXXXX-X (7 digits)",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./lib/signup/schema.ts:76:  .regex(whatsappRegex, 'Use formato: 595XXXXXXXXX (ej: 595981123456)')",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./lib/branding/config.ts:82:    taxId: '', // TODO: Add when registered",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./lib/branding/config.ts:85:    phone: '+595 XXX XXX XXX',",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./lib/db/migration-validator.ts:194:  // Expected format: XXX_description.sql",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./lib/utils/formatting.ts:54:  // Paraguayan phone format: +595 XXX XXX XXX",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./lib/utils/web-vitals.ts:81:    // Core Web Vitals (web-vitals v4 uses onXXX instead of getXXX)",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./lib/formatting/text.ts:227: * maskText(\"0981123456\", 2, \"X\") // \"09XXXXXX56\"",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./components/commerce/index.ts:4: * TODO: Add LoyaltyRedemption component when implemented",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./app/[clinic]/dashboard/clients/page.tsx:169:    // Format Paraguay numbers: +595 XXX XXX XXX",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./components/whatsapp/quick-send.tsx:94:                placeholder=\"9XX XXX XXX\"",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./components/ads/adsense-script.tsx:12: * - NEXT_PUBLIC_ADSENSE_CLIENT_ID: Your AdSense publisher ID (ca-pub-XXXXXXXXXX)",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./components/ads/ad-banner.tsx:36:  top: 'ca-pub-XXXXXXX-top',",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./components/ads/ad-banner.tsx:37:  sidebar: 'ca-pub-XXXXXXX-sidebar',",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./components/ads/ad-banner.tsx:38:  footer: 'ca-pub-XXXXXXX-footer',",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./components/ads/ad-banner.tsx:39:  inline: 'ca-pub-XXXXXXX-inline',",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./components/ads/ad-banner.tsx:131:            data-ad-client=\"ca-pub-XXXXXXXXXX\"",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./node_modules/react-redux/src/components/connect.tsx:122:    // TODO We're currently calling getState ourselves here, rather than letting `uSES` do it",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./node_modules/react-redux/src/components/connect.tsx:156:      // TODO This is hacky and not how `uSES` is meant to be used",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./node_modules/react-redux/src/components/connect.tsx:641:      // TODO: Change this to `React.useRef<Error>(undefined)` after upgrading to React 19.",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./node_modules/react-redux/src/components/connect.tsx:671:          // TODO We're reading the store directly in render() here. Bad idea?",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./node_modules/react-redux/src/components/connect.tsx:722:          // TODO We're passing through a big wrapper that does a bunch of extra side effects besides subscribing",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./node_modules/react-redux/src/components/connect.tsx:724:          // TODO This is incredibly hacky. We've already processed the store update and calculated new child props,",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./node_modules/react-redux/src/components/connect.tsx:725:          // TODO and we're just passing that through so it triggers a re-render for us rather than relying on `uSES`.",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./node_modules/@reduxjs/toolkit/src/query/tests/optimisticUpserts.test.tsx:71:        return { data: { id, title: 'All about cheese.', contents: 'TODO' } }",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./node_modules/@reduxjs/toolkit/src/query/tests/optimisticUpserts.test.tsx:237:        contents: 'TODO',",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./node_modules/@reduxjs/toolkit/src/query/tests/optimisticUpserts.test.tsx:239:      // TODO I have no idea why the query is getting called multiple times,",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./node_modules/@reduxjs/toolkit/src/query/tests/optimisticUpserts.test.tsx:252:      contents: 'TODO',",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./node_modules/@reduxjs/toolkit/src/query/tests/optimisticUpserts.test.tsx:502:        contents: 'TODO',",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./.next/server/app/api/billing/bank-transfer/route.js:5:Please ensure this variable is set in your .env.local file.`)}return a},APP_URL:d(\"NEXT_PUBLIC_APP_URL\",\"http://localhost:3000\"),NODE_ENV:d(\"NOD",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./.next/server/app/api/openapi.json/route.js:82:      `.trim(),contact:{name:\"Vete Platform Support\",email:\"soporte@vete.com\"},license:{name:\"Proprietary\"}},servers:[{url:\"http://localhost:3000\",descr",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./.next/server/app/registro/page.js:5:Please ensure this variable is set in your .env.local file.`)}return a},APP_URL:d(\"NEXT_PUBLIC_APP_URL\",\"http://localhost:3000\"),NODE_ENV:d(\"NODE_ENV\",\"developmen",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./.next/server/chunks/34228.js:1:exports.id=34228,exports.ids=[34228],exports.modules={1269:(a,b,c)=>{var d=c(643167);a.exports=function(a,b){var c=d(this,a),e=c.size;return c.set(a,b),this.size+=+(c.",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./.next/server/chunks/31223.js:1:\"use strict\";exports.id=31223,exports.ids=[31223],exports.modules={931223:(a,b,c)=>{c.d(b,{GP:()=>H});var d=c(688245),e=c(506381),f=c(59947),g=c(891776),h=c(388792),i=",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./.next/server/chunks/72596.js:11:Please ensure this variable is set in your .env.local file.`)}return a},APP_URL:d(\"NEXT_PUBLIC_APP_URL\",\"http://localhost:3000\"),NODE_ENV:d(\"NODE_ENV\",\"development\"),",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./.next/server/chunks/7871.js:1:\"use strict\";exports.id=7871,exports.ids=[7871],exports.modules={418186:(a,b,c)=>{c.d(b,{q:()=>e});var d=c(194531);function e(){return Object.assign({},(0,d.q)())}},907",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./.next/server/chunks/8986.js:2:]`;this.ESCAPE_REGEXP=new RegExp(b)}set headers(a){this._headers=a}shouldQuote(a,b){let c=b?this.formatterOptions.quoteHeaders:this.formatterOptions.quoteColumns;return",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./.next/server/chunks/79529.js:1:\"use strict\";exports.id=79529,exports.ids=[79529],exports.modules={70688:(a,b,c)=>{c.d(b,{Hero:()=>d});let d=(0,c(297954).registerClientReference)(function(){throw Err",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./.next/server/chunks/38088.js:1:\"use strict\";exports.id=38088,exports.ids=[38088],exports.modules={7632:(a,b,c)=>{c.d(b,{Ss:()=>i,ef:()=>g,xM:()=>h});let d=/^D+$/,e=/^Y+$/,f=[\"D\",\"DD\",\"YY\",\"YYYY\"];fu",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./.next/server/chunks/75894.js:8:Please ensure this variable is set in your .env.local file.`)}return a},APP_URL:e(\"NEXT_PUBLIC_APP_URL\",\"http://localhost:3000\"),NODE_ENV:e(\"NODE_ENV\",\"development\"),g",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./.next/server/chunks/65218.js:1:exports.id=65218,exports.ids=[65218],exports.modules={78335:()=>{},82175:(a,b,c)=>{\"use strict\";c.d(b,{RW:()=>g,Ro:()=>o,Xp:()=>m,bS:()=>n});var d=c(202995),e=c(346131",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./node_modules/@bufbuild/protobuf/dist/esm/equals.js:51:// TODO(tstamm) add an option to consider NaN equal to NaN?",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./node_modules/@bufbuild/protobuf/dist/esm/equals.js:67:            // TODO(tstamm) can't we compare sizes first?",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./node_modules/@bufbuild/protobuf/dist/cjs/equals.js:54:// TODO(tstamm) add an option to consider NaN equal to NaN?",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./node_modules/@bufbuild/protobuf/dist/cjs/equals.js:70:            // TODO(tstamm) can't we compare sizes first?",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./node_modules/yoctocolors-cjs/index.js:4:// TODO: Use a better method when it's added to Node.js (https://github.com/nodejs/node/pull/40240)",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./node_modules/@grpc/proto-loader/build/src/index.js:122:        // TODO(murgatroid99): Find a better way to handle this",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./node_modules/@grpc/proto-loader/node_modules/cliui/build/lib/string-utils.js:3:// TODO: look at porting https://www.npmjs.com/package/wrap-ansi to ESM.",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./node_modules/@grpc/proto-loader/node_modules/string-width/index.js:46:// TODO: remove this in the next major version",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./tests/e2e/E2E_IMPLEMENTATION_SUMMARY.md:269:### Priority 2 - Core Workflows (TODO)",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./tests/e2e/E2E_IMPLEMENTATION_SUMMARY.md:301:### Priority 3 - Advanced Features (TODO)",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./tests/e2e/README.md:66:| `owner-portal/booking.spec.ts`            | TODO   | Appointment booking flow     |",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./tests/e2e/README.md:67:| `staff-dashboard/appointments.spec.ts`    | TODO   | Staff appointment management |",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./tests/e2e/README.md:68:| `staff-dashboard/medical-records.spec.ts` | TODO   | Medical record creation      |",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./tests/e2e/README.md:69:| `store/checkout.spec.ts`                  | TODO   | E-commerce checkout flow     |",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./tests/e2e/README.md:70:| `staff-dashboard/prescriptions.spec.ts`   | TODO   | Prescription issuance        |",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./tests/e2e/README.md:76:| `multi-tenant/isolation.spec.ts`          | TODO   | Tenant data isolation  |",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./tests/e2e/README.md:77:| `staff-dashboard/lab-orders.spec.ts`      | TODO   | Laboratory workflows   |",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./tests/e2e/README.md:78:| `staff-dashboard/hospitalization.spec.ts` | TODO   | Kennel management      |",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./tests/e2e/README.md:79:| `auth/role-access.spec.ts`                | TODO   | Role-based permissions |",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./db/STORE_INVENTORY_ANALYSIS.md:615:\u2502 SKU: XXX-XXX-XXX             \u2502",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./.content_data/CavillPet/cuestionario/02-marca-y-diseno.md:45:**C\u00f3digo hexadecimal (#XXXXXX):** **********************\\_**********************",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./.content_data/CavillPet/cuestionario/02-marca-y-diseno.md:50:**C\u00f3digo hexadecimal (#XXXXXX):** **********************\\_**********************",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./.content_data/CavillPet/cuestionario/00-INSTRUCCIONES.md:40:- WhatsApp: +595 XXX XXX XXX",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./node_modules/date-fns-tz/README.md:78:Unlike `date-fns/format`, the `z..zzzz`, `x..xxxxx`, `X..XXXXX` and `O..OOO` tokens will all",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./node_modules/date-fns-tz/README.md:91:formatInTimeZone(date, 'America/New_York', 'yyyy-MM-dd HH:mm:ssXXX') // 2014-10-25 06:46:20-04:00",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./node_modules/date-fns-tz/README.md:237:format(nyDate, 'yyyy-MM-dd HH:mm:ssXXX', { timeZone: 'America/New_York' }) // 2014-10-25 06:46:20-04:00",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./node_modules/fast-uri/README.md:136:## TODO",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./node_modules/tmp/README.md:316:tmp.dir({ template: 'tmp-XXXXXX' }, function _tempDirCreated(err, path) {",
+          "priority": "low"
+        }
+      ],
+      "discovered_at": "2026-02-07T11:12:27.086827"
+    },
+    {
+      "repo": "work-coordination",
+      "path": "/home/ai-whisperers/work-coordination",
+      "tier": "P1",
+      "findings": [
+        {
+          "type": "todo",
+          "raw": "./agents/erebus/FOCUS.md:15:2. **ternary-vaes-bioinformatics** \u2014 Run tests, clear TODOs",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./audits/research-repos.md:61:- 2 TODOs in code (minor)",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./pillars/research/projects/padic-bioinformatics/PROJECT.md:84:| Clear 2 TODOs | 2 | \u2b1c |",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./HIERARCHY.md:76:| Pillar | `PIL-XXX` | `PIL-001` |",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./HIERARCHY.md:77:| Project | `PRJ-XXX` | `PRJ-VETE` |",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./HIERARCHY.md:79:| Epic | `EPIC-XXX` | `EPIC-042` |",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./HIERARCHY.md:80:| Story | `{REPO}-S-XXX` | `VETE-S-001` |",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./HIERARCHY.md:81:| Task | `{REPO}-T-XXX` | `VETE-T-042` |",
+          "priority": "low"
+        }
+      ],
+      "discovered_at": "2026-02-07T11:12:28.135291"
+    },
+    {
+      "repo": "ternary-vaes-bioinformatics",
+      "path": "/home/ai-whisperers/ternary-vaes-bioinformatics",
+      "tier": "P2",
+      "findings": [
+        {
+          "type": "todo",
+          "raw": "./deliverables/partners/antimicrobial_peptides/src/vae_interface.py:49:            # TODO: Implement actual token-to-sequence conversion logic here",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./deliverables/partners/antimicrobial_peptides/scripts/latent_nsga2.py:449:        # TODO: Implement actual VAE loading",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./deliverables/partners/protein_stability_ddg/scripts/ingest_pdb_rotamers.py:423:            \"sequence_context\": \"XXX\" + residue_names[i][:1] + \"XXX\",  # Simplified context",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./deliverables/docs/DELIVERABLES_IMPROVEMENT_PLAN.md:640:| VAE service module | Shared | HIGH | TODO |",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./deliverables/docs/DELIVERABLES_IMPROVEMENT_PLAN.md:641:| Demo notebook | All | HIGH | TODO |",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./deliverables/docs/DELIVERABLES_IMPROVEMENT_PLAN.md:643:| Generate showcase figures | All | HIGH | TODO |",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./deliverables/docs/DELIVERABLES_IMPROVEMENT_PLAN.md:649:| MSA pipeline | Rojas | MEDIUM | TODO |",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./deliverables/docs/DELIVERABLES_IMPROVEMENT_PLAN.md:650:| Activity predictor training | Brizuela | MEDIUM | TODO |",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./deliverables/docs/DELIVERABLES_IMPROVEMENT_PLAN.md:651:| ProTherm integration | Colbes | MEDIUM | TODO |",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./deliverables/docs/DELIVERABLES_IMPROVEMENT_PLAN.md:652:| Dashboard prototype | All | MEDIUM | TODO |",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./deliverables/docs/DELIVERABLES_IMPROVEMENT_PLAN.md:658:| Real Rosetta integration | Colbes | HIGH | TODO |",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./deliverables/docs/DELIVERABLES_IMPROVEMENT_PLAN.md:659:| NGS minority variants | HIV | MEDIUM | TODO |",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./deliverables/docs/DELIVERABLES_IMPROVEMENT_PLAN.md:660:| ESMFold structures | Brizuela | MEDIUM | TODO |",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./deliverables/docs/DELIVERABLES_IMPROVEMENT_PLAN.md:661:| Publication figures | All | HIGH | TODO |",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./deliverables/partners/outreach_drafts/39_hmamp_authors.md:56:- **TODO:** Look up HMAMP paper on arXiv for corresponding author email",
+          "priority": "low"
+        }
+      ],
+      "discovered_at": "2026-02-07T11:12:30.091801"
+    },
+    {
+      "repo": "psicologia-ia",
+      "path": "/home/ai-whisperers/psicologia-ia",
+      "tier": "P2",
+      "findings": [
+        {
+          "type": "todo",
+          "raw": "./06-LEGAL/legal/consentimiento-analisis-ia.md:114:> **TODO antes de usar este documento:**",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./06-LEGAL/legal/consentimiento-informado.md:158:> **TODO antes de usar este documento:**",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./06-LEGAL/legal/politica-privacidad.md:170:> **TODO antes de usar este documento:**",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./04-PLANTILLAS/FACTURA-RECIBO.md:56:Sesion de coaching - [FECHA]        Gs. XXX,XXX",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./04-PLANTILLAS/FACTURA-RECIBO.md:57:[Otro concepto si aplica]           Gs. XXX,XXX",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./04-PLANTILLAS/FACTURA-RECIBO.md:59:TOTAL                               Gs. XXX,XXX",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./04-PLANTILLAS/FACTURA-RECIBO.md:97:                                    Gs. XXX,XXX",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./05-MARKETING/INSTAGRAM-CONTENT-PLAN.md:369:- Responde TODOS los comments y DMs",
+          "priority": "low"
+        },
+        {
+          "type": "todo",
+          "raw": "./SETUP.md:149:        \u2514\u2500\u2500 001-XXX/",
+          "priority": "low"
+        }
+      ],
+      "discovered_at": "2026-02-07T11:12:31.575807"
+    },
+    {
+      "repo": "photos-to-kml",
+      "path": "/home/ai-whisperers/photos-to-kml",
+      "tier": "P3",
+      "findings": [],
+      "discovered_at": "2026-02-07T11:12:32.589101"
+    },
+    {
+      "repo": "courses-website",
+      "error": "not found",
+      "findings": []
+    }
+  ],
+  "total_findings": 112
+}
