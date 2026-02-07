@@ -18,7 +18,7 @@ As a researcher, I want to align HIV sequences so I can analyze evolutionary pat
 
 | ID | Task | Est | Status | Assignee |
 |----|------|-----|--------|----------|
-| T001 | Set up sequence data pipeline | 1h | ⏳ | Erebus 🔥 |
+| T001 | Set up sequence data pipeline | 1h | ✅ | Erebus 🔥 |
 | T002 | Download from Los Alamos DB | 1h | ⬜ | — |
 | T003 | Implement MAFFT wrapper | 1h | ⬜ | — |
 | T004 | Create alignment viewer | 2h | ⬜ | — |
