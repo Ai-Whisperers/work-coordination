@@ -21,7 +21,7 @@ As a developer, I want automated testing so PRs are validated automatically.
 | T002 | Add pytest configuration | 20m | ✅ | Erebus 🔥 |
 | T003 | Create sample tests | 30m | ✅ | Erebus 🔥 |
 | T004 | Test workflow runs | 20m | ✅ | Erebus 🔥 |
-| T005 | Add badge to README | 10m | ⬜ | — |
+| T005 | Add badge to README | 10m | ⏳ | Erebus 🔥 |
 
 ## Technical Notes
 - Use pytest
