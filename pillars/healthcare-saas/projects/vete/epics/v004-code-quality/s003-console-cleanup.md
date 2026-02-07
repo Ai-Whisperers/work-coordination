@@ -28,7 +28,7 @@
 | ID | Task | Effort | Status | Owner |
 |----|------|--------|--------|-------|
 | T001 | Find and remove console.log statements | 1h | ✅ | Erebus 🔥 |
-| T002 | Replace debug logs with logger utility | 30m | ⬜ | — |
+| T002 | Replace debug logs with logger utility | 30m | ⏳ | Erebus 🔥 |
 | T003 | Ensure console.error is appropriate | 30m | ⬜ | — |
 
 ---
