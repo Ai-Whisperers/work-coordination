@@ -1,7 +1,7 @@
 # S001: Sales Materials
 
 **Epic:** [v005-go-to-market](_epic.md)  
-**Status:** 📋 Ready  
+**Status:** ⏳ Active  
 **Effort:** ~3 hours
 
 ---

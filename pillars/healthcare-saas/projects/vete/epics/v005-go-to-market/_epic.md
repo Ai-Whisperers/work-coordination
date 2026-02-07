@@ -1,7 +1,7 @@
 # Epic v005: Go-To-Market
 
 **Project:** [Vete](../../_project.md)  
-**Status:** 📋 Ready  
+**Status:** ⏳ Active  
 **Priority:** 🔴 CRITICAL  
 **Target:** February 2026  
 **Effort:** ~20 hours
@@ -31,12 +31,12 @@ Get the first paying veterinary clinic on Vete. All technical work means nothing
 
 | ID | Story | Status | Effort |
 |----|-------|--------|--------|
-| [s001](s001-sales-materials.md) | Create sales materials | 📋 Ready | 3h |
-| [s002](s002-prospect-list.md) | Build prospect list | 📋 Ready | 2h |
+| [s001](s001-sales-materials.md) | Create sales materials | ⏳ 1/5 | 3h |
+| [s002](s002-prospect-list.md) | Build prospect list | ⏳ 4/5 | 2h |
 | [s003](s003-outreach.md) | Execute outreach campaign | 📋 Ready | 5h |
-| [s004](s004-demo-process.md) | Define demo process | 📋 Ready | 2h |
+| [s004](s004-demo-flow.md) | Define demo flow | 📋 Ready | 4h |
 | [s005](s005-onboarding.md) | Create onboarding flow | 📋 Ready | 4h |
-| [s006](s006-pricing.md) | Finalize pricing | 📋 Ready | 2h |
+| [s006](s006-pricing.md) | Finalize pricing | ⏳ 6/7 | 3h |
 
 ---
 

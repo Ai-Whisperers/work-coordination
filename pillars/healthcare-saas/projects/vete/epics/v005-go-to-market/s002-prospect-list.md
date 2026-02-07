@@ -1,7 +1,7 @@
 # S002: Prospect List
 
 **Epic:** [v005-go-to-market](_epic.md)  
-**Status:** 📋 Ready  
+**Status:** ⏳ Active  
 **Effort:** ~2 hours
 
 ---

@@ -94,6 +94,38 @@ Focus on high-risk routes first: user input, financial operations, medical data.
 
 ### T002: Add Zod schemas
 
+**Progress (2026-02-07 overnight - Nyx 🌙):** 99/312 routes validated (32%)
+
+**New Schema Files Created:**
+| File | Schemas |
+|------|---------|
+| `analytics.ts` | storeAnalyticsQuerySchema, analyticsExportQuerySchema, webVitalsPayloadSchema, turnoverQuerySchema, marginsQuerySchema |
+| `notification.ts` | notificationSettingsSchema |
+| `ambassador.ts` | validateCodeQuerySchema, processConversionSchema, referralsQuerySchema |
+| `signup.ts` | uploadLogoFormSchema, onboardingCompleteSchema |
+| `admin.ts` | pendingProductsQuerySchema, approveProductSchema |
+| `inventory.ts` | barcodeLookupQuerySchema, inventoryAdjustSchema, inventoryReceiveSchema, inventoryImportPreviewBodySchema |
+| `message.ts` | templateQuerySchema, createTemplateSchema, createQuickReplySchema, deleteQuickReplyQuerySchema, uploadAttachmentFormSchema |
+| `procurement.ts` | purchaseOrderQuerySchema, createPurchaseOrderSchema |
+| `lab.ts` | labCommentSchema, labResultsSchema |
+
+**Routes Updated (22 routes overnight):**
+- ✅ invoices/[id]/payments, invoices/[id]/refund
+- ✅ analytics/store, analytics/export, analytics/web-vitals, analytics/store/turnover, analytics/store/margins
+- ✅ ambassador/validate, ambassador/process-conversion, ambassador/referrals
+- ✅ admin/products/pending, admin/products/[id]/approve
+- ✅ inventory/barcode-lookup, inventory/adjust, inventory/receive, inventory/import/preview
+- ✅ messages/templates, messages/quick-replies, messages/attachments
+- ✅ procurement/orders (GET & POST)
+- ✅ lab-orders/[id]/comments, lab-orders/[id]/results
+- ✅ user/notification-settings, user/onboarding-complete
+- ✅ signup/upload-logo
+
+**Remaining (~213 routes):**
+- Most are cron jobs (internal, lower priority)
+- Some are GET-only with no user input
+- High-priority remaining: store/orders, appointments, services, billing
+
 **Pattern to follow:**
 
 ```typescript

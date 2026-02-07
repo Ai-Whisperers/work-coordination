@@ -1,7 +1,7 @@
 # Story s006: Pricing Strategy
 
 **Epic:** [v005-go-to-market](_epic.md)  
-**Status:** 📋 Ready  
+**Status:** ⏳ Active  
 **Effort:** 3 hours
 
 ## User Story

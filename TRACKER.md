@@ -2,7 +2,7 @@
 
 _All hands on Vete_
 
-**Updated:** 2026-02-06 21:15 UTC
+**Updated:** 2026-02-07 11:30 UTC
 
 ---
 
@@ -12,9 +12,9 @@ _All hands on Vete_
 |------|--------|------|-------|----------|
 | v003-security-devops | ⏳ Active | 11 | 12 | High |
 | v004-code-quality | 📋 Ready | 0 | 16 | Medium |
-| v005-go-to-market | 📋 Ready | 0 | 6 | 🔴 CRITICAL |
+| v005-go-to-market | ⏳ Active | 11 | 35 | 🔴 CRITICAL |
 | v006-documentation | 📋 Ready | 0 | 4 | Medium |
-| **Total** | | **11** | **38** | |
+| **Total** | | **22** | **67** | |
 
 ---
 
@@ -22,14 +22,31 @@ _All hands on Vete_
 
 **Goal:** 1 paying clinic by end of February
 
-| Story | Tasks | Status |
-|-------|-------|--------|
-| s001-sales-materials | 5 | ⬜ Ready |
-| s002-prospect-list | 5 | ⬜ Ready |
-| s003-outreach | 5 | ⬜ Ready |
-| s004-demo-process | TBD | ⬜ Ready |
-| s005-onboarding | TBD | ⬜ Ready |
-| s006-pricing | TBD | ⬜ Ready |
+| Story | Done/Total | Status |
+|-------|------------|--------|
+| s001-sales-materials | 1/5 | ⏳ Active |
+| s002-prospect-list | 4/5 | ⏳ Active |
+| s003-outreach | 0/5 | ⬜ Ready |
+| s004-demo-flow | 0/6 | ⬜ Ready |
+| s005-onboarding | 0/7 | ⬜ Ready |
+| s006-pricing | 6/7 | ⏳ Active |
+
+**Completed:**
+- ✅ WhatsApp pitch template
+- ✅ Prospect list (10 clinics found)
+- ✅ Tracking spreadsheet
+- ✅ Competitor pricing research
+- ✅ 3 pricing tiers defined
+- ✅ Feature matrix
+- ✅ PYG/USD pricing
+- ✅ Payment terms
+- ✅ Contract template
+
+**Next Priority Tasks:**
+1. T001: Create 1-page sales deck PDF (s001)
+2. T005: Write email pitch template (s001)
+3. T007: Build pricing page (s006)
+4. T001: Send first batch WhatsApp (s003)
 
 ---
 
@@ -37,7 +54,7 @@ _All hands on Vete_
 
 | Task | Story | Epic | Owner |
 |------|-------|------|-------|
-| T002: Add Zod schemas | s003-input-sanitization | v003 | Nyx 🌙 |
+| T002: Add Zod schemas (99/312) | s003-input-sanitization | v003 | Nyx 🌙 |
 
 ---
 
@@ -51,7 +68,7 @@ _All hands on Vete_
 | s004-auth-hardening | ✅ Complete | 2/2 |
 | s005-env-documentation | ✅ Complete | 3/3 |
 
-**Remaining:** T002 - Add Zod schemas (99/312 routes done)
+**Remaining:** T002 - Add Zod schemas (99/312 routes done, ~32%)
 
 ---
 
@@ -86,7 +103,10 @@ _All hands on Vete_
 | T001: API Routes Audit | s003 | Feb 6 |
 | T001-T002: Auth Hardening | s004 | Feb 6 |
 | T001-T003: Env Documentation | s005 | Feb 6 |
-| Zod validation (10 routes) | s003 | Feb 6 |
+| Zod validation (22 routes) | s003 | Feb 7 |
+| WhatsApp pitch template | s001 (v005) | Feb 7 |
+| Prospect list research | s002 (v005) | Feb 7 |
+| Pricing strategy | s006 (v005) | Feb 7 |
 
 ---
 
@@ -105,8 +125,8 @@ _All hands on Vete_
 
 | Metric | Value |
 |--------|-------|
-| Total Tasks | 38 |
-| Completed | 11 |
+| Total Tasks | 67 |
+| Completed | 22 |
 | In Progress | 1 |
-| Ready | 26 |
-| Completion | 29% |
+| Ready | 44 |
+| Completion | 33% |
