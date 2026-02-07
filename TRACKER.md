@@ -2,103 +2,91 @@
 
 _All hands on Vete_
 
-**Updated:** 2026-02-06 18:25 UTC
+**Updated:** 2026-02-06 21:15 UTC
 
 ---
 
 ## Current Progress
 
-| Epic | Status | Done | Total |
-|------|--------|------|-------|
-| v003-security-devops | ⏳ Active | 1 | 12 |
-| v004-code-quality | 📋 Ready | 0 | 16 |
-| **Total** | | **1** | **28** |
+| Epic | Status | Done | Total | Priority |
+|------|--------|------|-------|----------|
+| v003-security-devops | ⏳ Active | 11 | 12 | High |
+| v004-code-quality | 📋 Ready | 0 | 16 | Medium |
+| v005-go-to-market | 📋 Ready | 0 | 6 | 🔴 CRITICAL |
+| v006-documentation | 📋 Ready | 0 | 4 | Medium |
+| **Total** | | **11** | **38** | |
+
+---
+
+## 🔴 Priority: Go-To-Market (v005)
+
+**Goal:** 1 paying clinic by end of February
+
+| Story | Tasks | Status |
+|-------|-------|--------|
+| s001-sales-materials | 5 | ⬜ Ready |
+| s002-prospect-list | 5 | ⬜ Ready |
+| s003-outreach | 5 | ⬜ Ready |
+| s004-demo-process | TBD | ⬜ Ready |
+| s005-onboarding | TBD | ⬜ Ready |
+| s006-pricing | TBD | ⬜ Ready |
 
 ---
 
 ## ⏳ In Progress
 
-| Task | Story | Owner |
-|------|-------|-------|
-| T002: Node.js matrix | s001-cicd | Nyx 🌙 |
+| Task | Story | Epic | Owner |
+|------|-------|------|-------|
+| T002: Add Zod schemas | s003-input-sanitization | v003 | Nyx 🌙 |
 
 ---
 
-## 📋 Ready to Claim (v003)
+## v003 Security & DevOps (11/12) ⏳
 
-### s001-cicd-pipeline (1/3 done)
-| Task | Effort | Status |
-|------|--------|--------|
-| T003: Branch protection | 30m | ⬜ |
+| Story | Status | Done/Total |
+|-------|--------|------------|
+| s001-cicd-pipeline | ✅ Complete | 3/3 |
+| s002-rate-limiting | ✅ Complete | 2/2 |
+| s003-input-sanitization | ⏳ Active | 1/2 |
+| s004-auth-hardening | ✅ Complete | 2/2 |
+| s005-env-documentation | ✅ Complete | 3/3 |
 
-### s002-rate-limiting (0/2 done)
-| Task | Effort | Status |
-|------|--------|--------|
-| T001: Research options | 1h | ⬜ |
-| T002: Implement limiter | 3h | ⬜ |
-
-### s003-input-sanitization (0/2 done)
-| Task | Effort | Status |
-|------|--------|--------|
-| T001: Audit API routes | 2h | ⬜ |
-| T002: Add Zod schemas | 4h | ⬜ |
-
-### s004-auth-hardening (0/2 done)
-| Task | Effort | Status |
-|------|--------|--------|
-| T001: Review Supabase auth | 1h | ⬜ |
-| T002: Failed login monitoring | 2h | ⬜ |
-
-### s005-env-documentation (0/3 done)
-| Task | Effort | Status |
-|------|--------|--------|
-| T001: Create .env.example | 30m | ⬜ |
-| T002: Add comments | 30m | ⬜ |
-| T003: Update README | 30m | ⬜ |
+**Remaining:** T002 - Add Zod schemas (77/312 routes done)
 
 ---
 
-## 📋 Ready to Claim (v004)
+## v004 Code Quality (0/16) 📋
 
-### s001-eliminate-any-types (0/5 done)
-| Task | Effort | Status |
-|------|--------|--------|
-| T001: Fix any in lib/domains/ | 1h | ⬜ |
-| T002: Fix any in lib/actions/ | 1h | ⬜ |
-| T003: Fix any in app/api/ | 1h | ⬜ |
-| T004: Fix any in components/ | 1h | ⬜ |
-| T005: Create shared types | 1h | ⬜ |
-
-### s002-fix-lint-warnings (0/4 done)
-| Task | Effort | Status |
-|------|--------|--------|
-| T001: Fix lint in lib/ | 1h | ⬜ |
-| T002: Fix lint in app/ | 1h | ⬜ |
-| T003: Fix lint in components/ | 1h | ⬜ |
-| T004: Remove eslint-disable | 30m | ⬜ |
-
-### s003-console-cleanup (0/3 done)
-| Task | Effort | Status |
-|------|--------|--------|
-| T001: Remove console.log | 1h | ⬜ |
-| T002: Replace with logger | 30m | ⬜ |
-| T003: Review console.error | 30m | ⬜ |
-
-### s004-type-safety (0/4 done)
-| Task | Effort | Status |
-|------|--------|--------|
-| T001: Regenerate Supabase types | 30m | ⬜ |
-| T002: Fix null handling | 1h | ⬜ |
-| T003: Add Zod schemas | 1.5h | ⬜ |
-| T004: Remove unsafe casts | 1h | ⬜ |
+| Story | Tasks | Effort |
+|-------|-------|--------|
+| s001-eliminate-any-types | 5 | 5h |
+| s002-fix-lint-warnings | 4 | 3.5h |
+| s003-console-cleanup | 3 | 2h |
+| s004-type-safety | 4 | 4h |
 
 ---
 
-## ✅ Completed Today
+## v006 Documentation (0/4) 📋
 
-| Task | Story | Time |
+| Story | Effort |
+|-------|--------|
+| s001-user-docs | 6h |
+| s002-api-docs | 4h |
+| s003-deployment-docs | 3h |
+| s004-dev-setup | 2h |
+
+---
+
+## ✅ Completed Recently
+
+| Task | Story | Date |
 |------|-------|------|
-| T001: GH Actions workflow | s001-cicd | 18:20 |
+| T001-T003: CI/CD Pipeline | s001 | Feb 6 |
+| T001-T002: Rate Limiting | s002 | Feb 6 |
+| T001: API Routes Audit | s003 | Feb 6 |
+| T001-T002: Auth Hardening | s004 | Feb 6 |
+| T001-T003: Env Documentation | s005 | Feb 6 |
+| Zod validation (10 routes) | s003 | Feb 6 |
 
 ---
 
@@ -108,3 +96,17 @@ _All hands on Vete_
 |------|------|
 | v003-security-devops | `pillars/healthcare-saas/projects/vete/epics/v003-security-devops/` |
 | v004-code-quality | `pillars/healthcare-saas/projects/vete/epics/v004-code-quality/` |
+| v005-go-to-market | `pillars/healthcare-saas/projects/vete/epics/v005-go-to-market/` |
+| v006-documentation | `pillars/healthcare-saas/projects/vete/epics/v006-documentation/` |
+
+---
+
+## Stats
+
+| Metric | Value |
+|--------|-------|
+| Total Tasks | 38 |
+| Completed | 11 |
+| In Progress | 1 |
+| Ready | 26 |
+| Completion | 29% |
