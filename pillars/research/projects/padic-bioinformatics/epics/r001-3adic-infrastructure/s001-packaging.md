@@ -18,7 +18,7 @@ As a researcher, I want proper Python packaging so the library can be installed 
 
 | ID | Task | Est | Status | Assignee |
 |----|------|-----|--------|----------|
-| T001 | Add MIT LICENSE file | 15m | ⏳ | Erebus 🔥 |
+| T001 | Add MIT LICENSE file | 15m | ✅ | Erebus 🔥 |
 | T002 | Create pyproject.toml | 30m | ⬜ | — |
 | T003 | Write README with examples | 45m | ⬜ | — |
 | T004 | Add __init__.py files | 20m | ⬜ | — |
