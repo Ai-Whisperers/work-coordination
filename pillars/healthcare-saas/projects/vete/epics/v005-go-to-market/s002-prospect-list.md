@@ -32,7 +32,7 @@
 | T002 | Search Instagram/Facebook for clinics | 30m | ⬜ | — |
 | T003 | Get contact info from websites | 30m | ⬜ | — |
 | T004 | Create tracking spreadsheet | 15m | ✅ | Nyx 🌙 |
-| T005 | Prioritize by size/potential | 15m | ⏳ | Nyx 🌙 |
+| T005 | Prioritize by size/potential | 15m | ✅ | Nyx 🌙 |
 
 ---
 
@@ -81,3 +81,18 @@ Created tracking system at `/home/ai-whisperers/Vete/sales/`:
 CSV columns: Clinic Name, Location, Size, Contact Name, Phone, Email, Instagram, Website, Status, Priority, Notes, Last Contact, Next Action
 
 Committed to Vete repo: `feat(sales): add prospect tracking spreadsheet and README`
+
+### T005 Complete (2026-02-07 - Nyx 🌙)
+
+Added scoring system (0-100) based on:
+- Size (+10/20/30)
+- Premium location (+20)
+- Website/Instagram (+15/10)
+- Proximity to San Lorenzo (+15)
+- Warm intro (+25)
+
+**Top 4 Priorities:**
+1. Hospital Veterinario Acosta Ñu (95)
+2. Clínica Veterinaria del Sol (90)
+3. Veterinaria San Roque (88)
+4. Pet Center Paraguay (85)
