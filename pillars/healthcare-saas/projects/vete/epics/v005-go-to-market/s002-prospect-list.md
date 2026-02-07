@@ -31,7 +31,7 @@
 | T001 | Search Google Maps for vet clinics | 30m | ✅ | Nyx 🌙 |
 | T002 | Search Instagram/Facebook for clinics | 30m | ⬜ | — |
 | T003 | Get contact info from websites | 30m | ⬜ | — |
-| T004 | Create tracking spreadsheet | 15m | ⏳ | Nyx 🌙 |
+| T004 | Create tracking spreadsheet | 15m | ✅ | Nyx 🌙 |
 | T005 | Prioritize by size/potential | 15m | ⬜ | — |
 
 ---
@@ -67,3 +67,17 @@
 | Status | Not contacted, Contacted, Demo scheduled, etc. |
 | Notes | Any relevant info |
 | Priority | High/Medium/Low |
+
+---
+
+## Technical Notes
+
+### T004 Complete (2026-02-06 - Nyx 🌙)
+
+Created tracking system at `/home/ai-whisperers/Vete/sales/`:
+- `prospects.csv` — Initial list with 9 clinics from target areas
+- `README.md` — Status values, priority definitions, usage guide
+
+CSV columns: Clinic Name, Location, Size, Contact Name, Phone, Email, Instagram, Website, Status, Priority, Notes, Last Contact, Next Action
+
+Committed to Vete repo: `feat(sales): add prospect tracking spreadsheet and README`
