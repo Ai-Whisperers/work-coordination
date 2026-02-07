@@ -13,8 +13,8 @@ _All hands on Vete_
 | v003-security-devops | ⏳ Active | 11 | 12 | High |
 | v004-code-quality | 📋 Ready | 0 | 16 | Medium |
 | v005-go-to-market | ⏳ Active | 11 | 35 | 🔴 CRITICAL |
-| v006-documentation | 📋 Ready | 0 | 4 | Medium |
-| **Total** | | **22** | **67** | |
+| v006-documentation | 📋 Ready | 0 | 18 | Medium |
+| **Total** | | **22** | **81** | |
 
 ---
 
@@ -83,14 +83,14 @@ _All hands on Vete_
 
 ---
 
-## v006 Documentation (0/4) 📋
+## v006 Documentation (0/18) 📋
 
-| Story | Effort |
-|-------|--------|
-| s001-user-docs | 6h |
-| s002-api-docs | 4h |
-| s003-deployment-docs | 3h |
-| s004-dev-setup | 2h |
+| Story | Tasks | Effort |
+|-------|-------|--------|
+| s001-user-docs | 6 | 6h |
+| s002-api-docs | 4 | 4h |
+| s003-deployment-docs | 4 | 3h |
+| s004-dev-setup | 4 | 2h |
 
 ---
 
@@ -125,8 +125,8 @@ _All hands on Vete_
 
 | Metric | Value |
 |--------|-------|
-| Total Tasks | 67 |
+| Total Tasks | 81 |
 | Completed | 22 |
 | In Progress | 1 |
-| Ready | 44 |
-| Completion | 33% |
+| Ready | 58 |
+| Completion | 27% |
