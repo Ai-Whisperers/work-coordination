@@ -30,7 +30,7 @@
 |----|------|--------|--------|-------|
 | T001 | Search Google Maps for vet clinics | 30m | ✅ | Nyx 🌙 |
 | T002 | Search Instagram/Facebook for clinics | 30m | ⬜ | — |
-| T003 | Get contact info from websites | 30m | ⬜ | — |
+| T003 | Get contact info from websites | 30m | ⏳ | Nyx 🌙 |
 | T004 | Create tracking spreadsheet | 15m | ✅ | Nyx 🌙 |
 | T005 | Prioritize by size/potential | 15m | ✅ | Nyx 🌙 |
 
