@@ -19,7 +19,7 @@ As the business owner, I want a clear pricing strategy so we can monetize sustai
 
 | ID | Task | Est | Status | Assignee |
 |----|------|-----|--------|----------|
-| T001 | Research competitor pricing | 45m | ⬜ | — |
+| T001 | Research competitor pricing | 45m | ⏳ | Nyx 🌙 |
 | T002 | Define 3 pricing tiers | 30m | ⬜ | — |
 | T003 | Create feature matrix | 30m | ⬜ | — |
 | T004 | Set PYG/USD pricing | 20m | ⬜ | — |
