@@ -17,7 +17,7 @@ As a developer, I want automated testing so PRs are validated automatically.
 
 | ID | Task | Est | Status | Assignee |
 |----|------|-----|--------|----------|
-| T001 | Create .github/workflows/test.yml | 30m | ⬜ | — |
+| T001 | Create .github/workflows/test.yml | 30m | ⏳ | Erebus 🔥 |
 | T002 | Add pytest configuration | 20m | ⬜ | — |
 | T003 | Create sample tests | 30m | ⬜ | — |
 | T004 | Test workflow runs | 20m | ⬜ | — |
