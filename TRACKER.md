@@ -51,7 +51,7 @@ _All hands on Vete_
 | s004-auth-hardening | ✅ Complete | 2/2 |
 | s005-env-documentation | ✅ Complete | 3/3 |
 
-**Remaining:** T002 - Add Zod schemas (94/312 routes done)
+**Remaining:** T002 - Add Zod schemas (97/312 routes done)
 
 ---
 
