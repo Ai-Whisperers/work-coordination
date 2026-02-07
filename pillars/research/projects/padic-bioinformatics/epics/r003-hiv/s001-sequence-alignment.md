@@ -20,7 +20,7 @@ As a researcher, I want to align HIV sequences so I can analyze evolutionary pat
 |----|------|-----|--------|----------|
 | T001 | Set up sequence data pipeline | 1h | ✅ | Erebus 🔥 |
 | T002 | Download from Los Alamos DB | 1h | ✅ | Erebus 🔥 |
-| T003 | Implement MAFFT wrapper | 1h | ⬜ | — |
+| T003 | Implement MAFFT wrapper | 1h | ⏳ | Erebus 🔥 |
 | T004 | Create alignment viewer | 2h | ⬜ | — |
 | T005 | Calculate conservation scores | 1h | ⬜ | — |
 | T006 | Add FASTA/Clustal export | 1h | ⬜ | — |
