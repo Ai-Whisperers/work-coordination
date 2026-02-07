@@ -29,7 +29,7 @@
 |----|------|--------|--------|-------|
 | T001 | Find and remove console.log statements | 1h | ✅ | Erebus 🔥 |
 | T002 | Replace debug logs with logger utility | 30m | ✅ | Erebus 🔥 |
-| T003 | Ensure console.error is appropriate | 30m | ⏳ | Erebus 🔥 |
+| T003 | Ensure console.error is appropriate | 30m | ✅ | Erebus 🔥 |
 
 ---
 
@@ -75,3 +75,17 @@ Ensure:
 - Used for actual errors
 - Includes useful context
 - Doesn't leak sensitive info
+
+---
+
+## Notes
+
+All console statements should go through the logger utility for proper formatting and environment handling.
+
+**T003 Findings (2026-02-07 - Erebus 🔥):**
+- ✅ Fixed 11 console.error statements in portal/user-facing components  
+- ⚠️ **Found 80+ additional console.error statements** throughout codebase
+- 🎯 **Scope much larger than 30m estimate** - needs dedicated cleanup sprint
+- 📋 **Categories found:** domain services, hooks, dashboard components, error boundaries
+- ✅ **Kept appropriate:** global-error.tsx (wrapped in dev check), logger utilities
+- 🚨 **Priority for next:** Dashboard components, domain services (highest user impact)
