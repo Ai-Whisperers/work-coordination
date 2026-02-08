@@ -20,7 +20,7 @@ As a sales person, I want a polished demo flow so I can show the product to pros
 | ID | Task | Est | Status | Assignee |
 |----|------|-----|--------|----------|
 | T001 | Write demo script (15 min flow) | 1h | ✅ | Erebus 🔥 |
-| T002 | Create demo clinic data seed | 45m | ⏳ | Erebus 🔥 |
+| T002 | Create demo clinic data seed | 45m | ✅ | Erebus 🔥 |
 | T003 | Build feature tour with tooltips | 1h | ⬜ | — |
 | T004 | Create demo reset script | 30m | ⬜ | — |
 | T005 | Record screen demo video | 45m | ⬜ | — |
